@@ -1,0 +1,22 @@
+2023-03-09 15:11:20,134 | INFO | Script Execution start at : 2023-03-09 15:11:20.134194
+2023-03-09 15:11:20,564 | INFO | Module Description :  Flipkart PCA reports download module.
+
+2023-03-09 15:11:20,564 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-09 15:11:20,564 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-09 15:11:20,565 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-09 15:11:20,565 | INFO | Platform : Linux
+2023-03-09 15:11:20,565 | INFO | author :  AGL 
+2023-03-09 15:11:20,565 | INFO | copyright : Copyright 2022, AGL
+2023-03-09 15:11:20,565 | INFO | credits : ['Shubham Jangid']
+2023-03-09 15:11:20,565 | INFO | license : AGL PVT LIMITED
+2023-03-09 15:11:20,565 | INFO | version : 1.0.0
+2023-03-09 15:11:20,565 | INFO | maintainer : Shubham Jangid
+2023-03-09 15:11:20,565 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-09 15:11:20,565 | INFO | status : dev
+
+2023-03-09 15:11:23,275 | INFO | Email inserted.
+2023-03-09 15:11:23,492 | INFO | Password inserted.
+2023-03-09 15:11:33,563 | INFO | login button clicked.
+2023-03-09 15:11:33,564 | INFO | logged in successfully.
+2023-03-09 15:11:33,564 | INFO | Process start for PlacementPerformanceReport

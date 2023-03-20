@@ -1,0 +1,32 @@
+2023-03-09 13:50:34,218 | INFO | Script Execution start at : 2023-03-09 13:50:34.218884
+2023-03-09 13:50:34,960 | INFO | Module Description :  Flipkart PCA/PLA Supermart reports download module.
+
+2023-03-09 13:50:34,961 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-09 13:50:34,961 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-09 13:50:34,961 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-09 13:50:34,961 | INFO | Platform : Linux
+2023-03-09 13:50:34,961 | INFO | author :  AGL 
+2023-03-09 13:50:34,961 | INFO | copyright : Copyright 2022, AGL
+2023-03-09 13:50:34,961 | INFO | credits : ['Shubham Jangid']
+2023-03-09 13:50:34,961 | INFO | license : AGL PVT LIMITED
+2023-03-09 13:50:34,961 | INFO | version : 1.0.0
+2023-03-09 13:50:34,961 | INFO | maintainer : Shubham Jangid
+2023-03-09 13:50:34,961 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-09 13:50:34,961 | INFO | status : dev
+
+2023-03-09 13:50:38,204 | INFO | Email inserted.
+2023-03-09 13:50:38,431 | INFO | Password inserted.
+2023-03-09 13:50:48,496 | INFO | login button clicked.
+2023-03-09 13:50:48,496 | INFO | logged in successfully.
+2023-03-09 13:50:48,497 | INFO | Report downloading and inserting data for supermart pca campaign
+2023-03-09 13:50:59,019 | INFO | pop up box removed..
+2023-03-09 13:51:05,081 | INFO | drop down clicked
+2023-03-09 13:51:13,207 | INFO | supermart option selected...
+2023-03-09 13:51:24,335 | INFO | Download btn clicked! Report downloaded
+2023-03-09 13:51:29,339 | INFO | Downloaded file name : cxkyw82raq4.csv
+2023-03-09 13:51:29,340 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-09 13:51:29,340 | INFO | file name changed..
+2023-03-09 13:51:29,340 | INFO | Downloaded file name : downloaded.csv
+2023-03-09 13:51:29,341 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-09 13:51:29,341 | INFO | file name changed..

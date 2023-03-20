@@ -1,0 +1,71 @@
+2023-02-27 09:33:19,494 | INFO | Script Execution start at : 2023-02-27 09:33:19.494827
+2023-02-27 09:33:19,860 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 09:33:19,860 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-27 09:33:19,860 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 09:33:19,860 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 09:33:19,860 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 09:33:19,860 | INFO | Platform : Linux
+2023-02-27 09:33:19,860 | INFO | author :  AGL 
+2023-02-27 09:33:19,860 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 09:33:19,860 | INFO | credits : ['Shubham Jangid']
+2023-02-27 09:33:19,860 | INFO | license : AGL PVT LIMITED
+2023-02-27 09:33:19,861 | INFO | version : 1.0.0
+2023-02-27 09:33:19,861 | INFO | maintainer : Shubham Jangid
+2023-02-27 09:33:19,861 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 09:33:19,861 | INFO | status : dev
+
+2023-02-27 09:33:22,309 | INFO | Email inserted.
+2023-02-27 09:33:22,512 | INFO | Password inserted.
+2023-02-27 09:33:32,569 | INFO | login button clicked.
+2023-02-27 09:33:32,569 | INFO | logged in successfully.
+2023-02-27 09:33:32,569 | INFO | Process start for ConsolidatedDailyReport
+2023-02-27 09:33:45,548 | INFO | pop up box removed..
+2023-02-27 09:33:51,653 | INFO | ad product dropdown clicked
+2023-02-27 09:33:57,708 | INFO | PCA option selected.
+2023-02-27 09:34:01,794 | INFO | report type drop down cliked
+2023-02-27 09:34:09,912 | INFO | Report type selected
+2023-02-27 09:34:09,912 | INFO | Consolidated Report type selected
+2023-02-27 09:34:16,087 | INFO | date div box clicked
+2023-02-27 09:34:22,144 | INFO | Range selected..
+2023-02-27 09:34:27,216 | INFO | Download button clicked
+2023-02-27 09:34:32,219 | INFO | Report download completed...
+2023-02-27 09:34:34,222 | INFO | Downloaded file name : nhbr7kdrd6l.csv
+2023-02-27 09:34:34,222 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaReports/downloaded.csv
+2023-02-27 09:34:34,222 | INFO | file name changed..
+2023-02-27 09:34:36,892 | INFO | inserting data...
+2023-02-27 09:34:36,892 | INFO | data inserted in flipkart_supermart_campaign_report_pca table.
+2023-02-27 09:34:41,896 | INFO | file removed..
+2023-02-27 09:34:41,897 | INFO | Process done for ConsolidatedDailyReport
+2023-02-27 09:34:46,900 | INFO | Process start for PlacementPerformanceReport
+2023-02-27 09:34:59,484 | INFO | pop up box removed..
+2023-02-27 09:35:05,543 | INFO | ad product dropdown clicked
+2023-02-27 09:35:11,624 | INFO | PCA option selected.
+2023-02-27 09:35:15,710 | INFO | report type drop down cliked
+2023-02-27 09:35:23,808 | INFO | Report type selected
+2023-02-27 09:35:23,808 | INFO | PlacementPerformanceReport Selected...
+2023-02-27 09:35:30,028 | INFO | date div box clicked
+2023-02-27 09:35:36,092 | INFO | Range selected..
+2023-02-27 09:35:41,149 | INFO | Download button clicked
+2023-02-27 09:35:46,152 | INFO | Report download completed...
+2023-02-27 09:35:48,154 | INFO | Downloaded file name : xkpxf0rn8ai.csv
+2023-02-27 09:35:48,154 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaReports/downloaded.csv
+2023-02-27 09:35:48,154 | INFO | file name changed..
+2023-02-27 09:35:50,770 | INFO | inserting data...
+2023-02-27 09:35:50,771 | INFO | data inserted in flipkart_supermart_campaign_report_pca table.
+2023-02-27 09:35:55,776 | INFO | file removed..
+2023-02-27 09:35:55,777 | INFO | Process done for PlacementPerformanceReport
+2023-02-27 09:36:10,000 | ERROR | Error removing pop up box
+2023-02-27 09:36:16,071 | INFO | ad product dropdown clicked
+2023-02-27 09:36:22,142 | INFO | PCA option selected.
+2023-02-27 09:36:26,299 | INFO | report type drop down cliked
+2023-02-27 09:36:34,367 | INFO | Report type selected
+2023-02-27 09:36:34,367 | INFO | SearchTeamReport Selected...
+2023-02-27 09:36:40,541 | INFO | date div box clicked
+2023-02-27 09:36:46,623 | INFO | Range selected..
+2023-02-27 09:36:51,743 | INFO | Download button clicked
+2023-02-27 09:36:56,748 | INFO | Report download completed...
+2023-02-27 09:36:58,750 | INFO | Downloaded file name : fbdm5oqusop.csv
+2023-02-27 09:36:58,750 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaReports/downloaded.csv
+2023-02-27 09:36:58,750 | INFO | file name changed..

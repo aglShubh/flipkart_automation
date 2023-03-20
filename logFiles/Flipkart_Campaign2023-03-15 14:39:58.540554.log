@@ -1,0 +1,27 @@
+2023-03-15 14:39:58,542 | INFO | Script Execution start at : 2023-03-15 14:39:58.541175
+2023-03-15 14:39:59,027 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-15 14:39:59,028 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-15 14:39:59,028 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-15 14:39:59,028 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-15 14:39:59,028 | INFO | Platform : Linux
+2023-03-15 14:39:59,028 | INFO | author :  AGL 
+2023-03-15 14:39:59,028 | INFO | copyright : Copyright 2022, AGL
+2023-03-15 14:39:59,028 | INFO | credits : ['Shubham Jangid']
+2023-03-15 14:39:59,028 | INFO | license : AGL PVT LIMITED
+2023-03-15 14:39:59,028 | INFO | version : 1.0.0
+2023-03-15 14:39:59,028 | INFO | maintainer : Shubham Jangid
+2023-03-15 14:39:59,028 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-15 14:39:59,028 | INFO | status : dev
+
+2023-03-15 14:40:00,131 | INFO | Logging in ...
+2023-03-15 14:40:01,303 | INFO | Email inserted.
+2023-03-15 14:40:01,494 | INFO | Password inserted.
+2023-03-15 14:40:11,655 | INFO | login button clicked.
+2023-03-15 14:40:11,656 | INFO | logged in successfully.
+2023-03-15 14:40:20,551 | INFO | Segment PLA and campaign_id 5WTD9PU15QX0 selected.
+2023-03-15 14:40:22,613 | INFO | pop up box removed..
+2023-03-15 14:40:25,616 | INFO | Pop up box removed...
+2023-03-15 14:40:30,730 | INFO | campaign state changed successfully
+2023-03-15 14:40:33,767 | ERROR | Error changing state of campaign or no such box to clickProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table automation.rpa_action action_status = 0 where campaign_id = '5WTD9PU15QX0'' at line 1")

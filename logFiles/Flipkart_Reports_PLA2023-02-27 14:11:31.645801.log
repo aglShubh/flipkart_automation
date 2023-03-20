@@ -1,0 +1,42 @@
+2023-02-27 14:11:31,646 | INFO | Script Execution start at : 2023-02-27 14:11:31.646038
+2023-02-27 14:11:32,005 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 14:11:32,005 | INFO | Module Description :  Flipkart PLA reports download module.
+
+2023-02-27 14:11:32,005 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 14:11:32,005 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 14:11:32,005 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 14:11:32,005 | INFO | Platform : Linux
+2023-02-27 14:11:32,005 | INFO | author :  AGL 
+2023-02-27 14:11:32,005 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 14:11:32,005 | INFO | credits : ['Shubham Jangid']
+2023-02-27 14:11:32,005 | INFO | license : AGL PVT LIMITED
+2023-02-27 14:11:32,005 | INFO | version : 1.0.0
+2023-02-27 14:11:32,005 | INFO | maintainer : Shubham Jangid
+2023-02-27 14:11:32,005 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 14:11:32,006 | INFO | status : dev
+
+2023-02-27 14:11:35,594 | INFO | Email inserted.
+2023-02-27 14:11:35,787 | INFO | Password inserted.
+2023-02-27 14:11:45,843 | INFO | login button clicked.
+2023-02-27 14:11:45,844 | INFO | logged in successfully.
+2023-02-27 14:11:45,844 | INFO | Process start for ConsolidatedDailyReport
+2023-02-27 14:11:45,844 | INFO | Process start for PlacementPerformanceReport
+2023-02-27 14:11:45,844 | INFO | Process start for SearchTeamReport
+2023-02-27 14:11:57,515 | INFO | pop up box removed..
+2023-02-27 14:12:06,572 | INFO | ad product dropdown clicked
+2023-02-27 14:12:12,699 | INFO | PLA option selected.
+2023-02-27 14:12:14,849 | INFO | click report for box clicked
+2023-02-27 14:12:18,986 | INFO | report type drop down cliked
+2023-02-27 14:12:27,084 | INFO | Report type selected
+2023-02-27 14:12:27,084 | INFO | SearchTeamReport Selected...
+2023-02-27 14:12:33,210 | INFO | date div box clicked
+2023-02-27 14:12:39,268 | INFO | Range selected..
+2023-02-27 14:12:44,330 | INFO | Download button clicked
+2023-02-27 14:12:49,332 | INFO | Report download completed...
+2023-02-27 14:12:51,333 | INFO | Downloaded file name : lmjzh7fbb.csv
+2023-02-27 14:12:51,334 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/plaReports/downloaded.csv
+2023-02-27 14:12:51,334 | INFO | file name changed..
+2023-02-27 14:12:57,100 | INFO | inserting data...
+2023-02-27 14:13:07,109 | INFO | file removed..
+2023-02-27 14:13:07,109 | INFO | Process done for SearchTeamReport for PLA

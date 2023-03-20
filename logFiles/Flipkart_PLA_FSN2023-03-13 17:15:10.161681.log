@@ -1,0 +1,47 @@
+2023-03-13 17:15:10,162 | INFO | Script Execution start at : 2023-03-13 17:15:10.162007
+2023-03-13 17:15:10,519 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-03-13 17:15:10,519 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-13 17:15:10,519 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-13 17:15:10,519 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-13 17:15:10,519 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-13 17:15:10,520 | INFO | Platform : Linux
+2023-03-13 17:15:10,520 | INFO | author :  AGL 
+2023-03-13 17:15:10,520 | INFO | copyright : Copyright 2022, AGL
+2023-03-13 17:15:10,520 | INFO | credits : ['Shubham Jangid']
+2023-03-13 17:15:10,520 | INFO | license : AGL PVT LIMITED
+2023-03-13 17:15:10,520 | INFO | version : 1.0.0
+2023-03-13 17:15:10,520 | INFO | maintainer : Shubham Jangid
+2023-03-13 17:15:10,520 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-13 17:15:10,520 | INFO | status : dev
+
+2023-03-13 17:15:11,761 | INFO | Logging in ...
+2023-03-13 17:15:13,172 | INFO | Email inserted.
+2023-03-13 17:15:13,403 | INFO | Password inserted.
+2023-03-13 17:15:23,520 | INFO | login button clicked.
+2023-03-13 17:15:23,520 | INFO | logged in successfully.
+2023-03-13 17:15:34,500 | INFO | Segment pla and campaign_id 11A55Y8T1P73 and ad_group_id FBVBORZKHWSI selected.
+2023-03-13 17:15:36,643 | INFO | pop up box removed..
+2023-03-13 17:15:39,647 | INFO | Pop up box removed...
+2023-03-13 17:15:44,664 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 17:15:55,760 | INFO | input box focused..
+2023-03-13 17:16:02,940 | INFO | fsn id set
+2023-03-13 17:16:04,978 | ERROR | Error click fsn state button.
+2023-03-13 17:16:06,980 | INFO | Successfully changed fsn state
+2023-03-13 17:16:12,952 | INFO | Segment pca and campaign_id 3DQQ674515LR and ad_group_id ZDM61QRF9XKC selected.
+2023-03-13 17:16:14,991 | INFO | pop up box removed..
+2023-03-13 17:16:17,995 | INFO | Pop up box removed...
+2023-03-13 17:16:23,050 | INFO | ad group  state changed successfully
+2023-03-13 17:16:33,085 | ERROR | Error finding input box element NoSuchElementException()
+2023-03-13 17:16:35,117 | INFO | Error in input of fsn id NoSuchElementException()
+2023-03-13 17:16:37,147 | ERROR | Error click fsn state button.
+2023-03-13 17:16:39,149 | INFO | Successfully changed fsn state
+2023-03-13 17:16:45,327 | INFO | Segment PLa and campaign_id 37QKYCDW4W8M and ad_group_id YAA5HXR0PPJ0 selected.
+2023-03-13 17:16:45,341 | ERROR | Error removing pop up box
+2023-03-13 17:16:48,343 | INFO | Pop up box removed...
+2023-03-13 17:16:53,388 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 17:17:00,407 | ERROR | Error finding input box element NoSuchElementException()
+2023-03-13 17:17:02,436 | INFO | Error in input of fsn id NoSuchElementException()
+2023-03-13 17:17:04,478 | ERROR | Error click fsn state button.
+2023-03-13 17:17:06,479 | INFO | Successfully changed fsn state

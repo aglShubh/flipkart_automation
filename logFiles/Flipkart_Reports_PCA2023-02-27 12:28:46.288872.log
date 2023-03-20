@@ -1,0 +1,46 @@
+2023-02-27 12:28:46,289 | INFO | Script Execution start at : 2023-02-27 12:28:46.289106
+2023-02-27 12:28:46,655 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 12:28:46,655 | INFO | Module Description :  Flipkart PCA reports download module.
+
+2023-02-27 12:28:46,656 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 12:28:46,656 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 12:28:46,656 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 12:28:46,656 | INFO | Platform : Linux
+2023-02-27 12:28:46,656 | INFO | author :  AGL 
+2023-02-27 12:28:46,656 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 12:28:46,656 | INFO | credits : ['Shubham Jangid']
+2023-02-27 12:28:46,656 | INFO | license : AGL PVT LIMITED
+2023-02-27 12:28:46,656 | INFO | version : 1.0.0
+2023-02-27 12:28:46,656 | INFO | maintainer : Shubham Jangid
+2023-02-27 12:28:46,656 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 12:28:46,656 | INFO | status : dev
+
+2023-02-27 12:28:49,746 | INFO | Email inserted.
+2023-02-27 12:28:49,951 | INFO | Password inserted.
+2023-02-27 12:29:00,083 | INFO | login button clicked.
+2023-02-27 12:29:00,084 | INFO | logged in successfully.
+2023-02-27 12:29:00,084 | INFO | Process start for ConsolidatedDailyReport
+2023-02-27 12:29:00,084 | INFO | Process start for PlacementPerformanceReport
+2023-02-27 12:29:00,084 | INFO | Process start for SearchTeamReport
+2023-02-27 12:29:00,084 | INFO | Process start for Attributed FSN Report
+2023-02-27 12:29:00,084 | INFO | Process start for flipkart_supermart_keyword_report_pca
+2023-02-27 12:29:00,084 | INFO | flipkart_supermart_seller_report_pca
+2023-02-27 12:29:00,084 | INFO | flipkart_supermart_consolidated_creative_report_pca
+2023-02-27 12:29:11,767 | INFO | pop up box removed..
+2023-02-27 12:29:17,848 | INFO | ad product dropdown clicked
+2023-02-27 12:29:24,012 | INFO | PCA option selected.
+2023-02-27 12:29:28,067 | INFO | report type drop down cliked
+2023-02-27 12:29:36,232 | INFO | Report type selected
+2023-02-27 12:29:36,232 | INFO | Seller Report...
+2023-02-27 12:29:42,456 | INFO | date div box clicked
+2023-02-27 12:29:48,539 | INFO | Range selected..
+2023-02-27 12:29:53,597 | INFO | Download button clicked
+2023-02-27 12:29:58,601 | INFO | Report download completed...
+2023-02-27 12:30:00,603 | INFO | Downloaded file name : gyvxk0mkhtv.csv
+2023-02-27 12:30:00,603 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaReports/downloaded.csv
+2023-02-27 12:30:00,603 | INFO | file name changed..
+2023-02-27 12:30:06,871 | INFO | inserting data...
+2023-02-27 12:30:06,871 | INFO | data inserted in flipkart_supermart_campaign_report_pca table.
+2023-02-27 12:30:16,880 | INFO | file removed..
+2023-02-27 12:30:16,881 | INFO | Process done for flipkartSupermartConsolidatedCreativeReportPca

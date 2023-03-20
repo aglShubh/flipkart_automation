@@ -1,0 +1,51 @@
+2023-03-10 14:51:50,088 | INFO | Script Execution start at : 2023-03-10 14:51:50.088100
+2023-03-10 14:51:50,444 | ERROR | Module not found error : ModuleNotFoundError("No module named 'iteration_utilities'")
+2023-03-10 14:51:50,444 | INFO | Module Description :  Flipkart PCA/PLA Supermart reports download module.
+
+2023-03-10 14:51:50,444 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-10 14:51:50,444 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-10 14:51:50,444 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-10 14:51:50,444 | INFO | Platform : Linux
+2023-03-10 14:51:50,444 | INFO | author :  AGL 
+2023-03-10 14:51:50,444 | INFO | copyright : Copyright 2022, AGL
+2023-03-10 14:51:50,444 | INFO | credits : ['Shubham Jangid']
+2023-03-10 14:51:50,445 | INFO | license : AGL PVT LIMITED
+2023-03-10 14:51:50,445 | INFO | version : 1.0.0
+2023-03-10 14:51:50,445 | INFO | maintainer : Shubham Jangid
+2023-03-10 14:51:50,445 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-10 14:51:50,445 | INFO | status : dev
+
+2023-03-10 14:51:52,910 | INFO | Email inserted.
+2023-03-10 14:51:53,083 | INFO | Password inserted.
+2023-03-10 14:52:03,166 | INFO | login button clicked.
+2023-03-10 14:52:03,167 | INFO | logged in successfully.
+2023-03-10 14:52:03,167 | INFO | Report downloading and inserting data for supermart pca campaign
+2023-03-10 14:52:07,262 | ERROR | Error clicking account dropdown ElementClickInterceptedException()
+2023-03-10 14:52:10,282 | INFO | Error selecting account NoSuchElementException()
+2023-03-10 14:52:15,405 | INFO | pop up box removed..
+2023-03-10 14:52:22,721 | INFO | pop up box removed..
+2023-03-10 14:52:28,807 | INFO | drop down clicked
+2023-03-10 14:52:36,930 | INFO | supermart option selected...
+2023-03-10 14:52:48,006 | INFO | Download btn clicked! Report downloaded
+2023-03-10 14:52:53,011 | INFO | Downloaded file name : n9r6cg22lmk.csv
+2023-03-10 14:52:53,011 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-10 14:52:53,011 | INFO | file name changed..
+2023-03-10 14:52:56,493 | INFO | inserting data...
+2023-03-10 14:53:06,503 | INFO | file removed..
+2023-03-10 14:53:08,504 | INFO | done for PCA
+2023-03-10 14:53:08,505 | INFO | Report downloading and inserting data for supermart pla campaign
+2023-03-10 14:53:14,618 | INFO | account dropdown clicked
+2023-03-10 14:53:21,843 | INFO | Account selected Vanish
+2023-03-10 14:53:26,894 | INFO | pop up box removed..
+2023-03-10 14:53:31,924 | ERROR | Error removing pop up box
+2023-03-10 14:53:37,998 | INFO | drop down clicked
+2023-03-10 14:53:46,162 | INFO | supermart option selected...
+2023-03-10 14:53:57,254 | INFO | Download btn clicked! Report downloaded
+2023-03-10 14:54:02,259 | INFO | Downloaded file name : bjgnx5rl5p.csv
+2023-03-10 14:54:02,259 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-10 14:54:02,260 | INFO | file name changed..
+2023-03-10 14:54:06,085 | INFO | inserting data...
+2023-03-10 14:54:16,095 | INFO | file removed..
+2023-03-10 14:54:18,097 | INFO | done for PCA
+2023-03-10 14:54:21,239 | INFO | Browser Exit..

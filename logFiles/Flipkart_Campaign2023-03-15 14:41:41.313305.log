@@ -1,0 +1,27 @@
+2023-03-15 14:41:41,313 | INFO | Script Execution start at : 2023-03-15 14:41:41.313537
+2023-03-15 14:41:41,778 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-15 14:41:41,778 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-15 14:41:41,778 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-15 14:41:41,778 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-15 14:41:41,778 | INFO | Platform : Linux
+2023-03-15 14:41:41,778 | INFO | author :  AGL 
+2023-03-15 14:41:41,778 | INFO | copyright : Copyright 2022, AGL
+2023-03-15 14:41:41,778 | INFO | credits : ['Shubham Jangid']
+2023-03-15 14:41:41,778 | INFO | license : AGL PVT LIMITED
+2023-03-15 14:41:41,779 | INFO | version : 1.0.0
+2023-03-15 14:41:41,779 | INFO | maintainer : Shubham Jangid
+2023-03-15 14:41:41,779 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-15 14:41:41,779 | INFO | status : dev
+
+2023-03-15 14:41:42,873 | INFO | Logging in ...
+2023-03-15 14:41:44,171 | INFO | Email inserted.
+2023-03-15 14:41:44,353 | INFO | Password inserted.
+2023-03-15 14:41:54,407 | INFO | login button clicked.
+2023-03-15 14:41:54,407 | INFO | logged in successfully.
+2023-03-15 14:42:03,198 | INFO | Segment PLA and campaign_id 5WTD9PU15QX0 selected.
+2023-03-15 14:42:05,242 | INFO | pop up box removed..
+2023-03-15 14:42:08,243 | INFO | Pop up box removed...
+2023-03-15 14:42:13,299 | INFO | campaign state changed successfully
+2023-03-15 14:42:16,372 | INFO | Action status changed...

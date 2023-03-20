@@ -1,0 +1,50 @@
+2023-03-13 11:55:53,836 | INFO | Script Execution start at : 2023-03-13 11:55:53.836249
+2023-03-13 11:55:54,325 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-13 11:55:54,325 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-13 11:55:54,325 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-13 11:55:54,325 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-13 11:55:54,325 | INFO | Platform : Linux
+2023-03-13 11:55:54,325 | INFO | author :  AGL 
+2023-03-13 11:55:54,325 | INFO | copyright : Copyright 2022, AGL
+2023-03-13 11:55:54,325 | INFO | credits : ['Shubham Jangid']
+2023-03-13 11:55:54,326 | INFO | license : AGL PVT LIMITED
+2023-03-13 11:55:54,326 | INFO | version : 1.0.0
+2023-03-13 11:55:54,326 | INFO | maintainer : Shubham Jangid
+2023-03-13 11:55:54,326 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-13 11:55:54,326 | INFO | status : dev
+
+2023-03-13 11:55:56,087 | INFO | Logging in ...
+2023-03-13 11:55:57,256 | INFO | Email inserted.
+2023-03-13 11:55:57,434 | INFO | Password inserted.
+2023-03-13 11:56:07,527 | INFO | login button clicked.
+2023-03-13 11:56:07,528 | INFO | logged in successfully.
+2023-03-13 11:56:13,836 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 11:56:13,904 | ERROR | Error removing pop up box
+2023-03-13 11:56:16,907 | INFO | Pop up box removed...
+2023-03-13 11:56:21,957 | ERROR | Error changing state of campaign NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-13 11:56:27,755 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 11:56:27,781 | ERROR | Error removing pop up box
+2023-03-13 11:56:30,784 | INFO | Pop up box removed...
+2023-03-13 11:56:36,861 | ERROR | Error changing state of campaign ElementClickInterceptedException('element click intercepted: Element <div role="presentation" class="action">...</div> is not clickable at point (1298, 75). Other element would receive the click: <div class="styles__MouseEventsBlockingOverlay-sc-13lgkj1-2 dYbIyd"></div>\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-13 11:56:42,717 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 11:56:44,827 | INFO | pop up box removed..
+2023-03-13 11:56:47,827 | INFO | Pop up box removed...
+2023-03-13 11:56:52,851 | ERROR | Error changing state of campaign NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-13 11:56:58,829 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 11:56:58,884 | ERROR | Error removing pop up box
+2023-03-13 11:57:01,887 | INFO | Pop up box removed...
+2023-03-13 11:57:07,967 | ERROR | Error changing state of campaign ElementClickInterceptedException('element click intercepted: Element <div role="presentation" class="action">...</div> is not clickable at point (1298, 75). Other element would receive the click: <div open="" class="styles__StyledTooltipContent-sc-1n9s716-0 cDbnWA">...</div>\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-13 11:57:13,970 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 11:57:14,005 | ERROR | Error removing pop up box
+2023-03-13 11:57:17,008 | INFO | Pop up box removed...
+2023-03-13 11:57:22,110 | INFO | campaign state changed successfully
+2023-03-13 11:57:31,061 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 11:57:31,095 | ERROR | Error removing pop up box
+2023-03-13 11:57:34,097 | INFO | Pop up box removed...
+2023-03-13 11:57:39,112 | ERROR | Error changing state of campaign NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-13 11:57:46,288 | INFO | Segment PLA and campaign_id FWRYLA0AF6K2 selected.
+2023-03-13 11:57:46,303 | ERROR | Error removing pop up box
+2023-03-13 11:57:49,303 | INFO | Pop up box removed...
+2023-03-13 11:57:54,331 | ERROR | Error changing state of campaign NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)

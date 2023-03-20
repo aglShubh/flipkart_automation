@@ -1,0 +1,91 @@
+2023-03-13 15:00:37,610 | INFO | Script Execution start at : 2023-03-13 15:00:37.610270
+2023-03-13 15:00:38,014 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-03-13 15:00:38,015 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-13 15:00:38,015 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-13 15:00:38,015 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-13 15:00:38,015 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-13 15:00:38,015 | INFO | Platform : Linux
+2023-03-13 15:00:38,015 | INFO | author :  AGL 
+2023-03-13 15:00:38,015 | INFO | copyright : Copyright 2022, AGL
+2023-03-13 15:00:38,015 | INFO | credits : ['Shubham Jangid']
+2023-03-13 15:00:38,015 | INFO | license : AGL PVT LIMITED
+2023-03-13 15:00:38,015 | INFO | version : 1.0.0
+2023-03-13 15:00:38,015 | INFO | maintainer : Shubham Jangid
+2023-03-13 15:00:38,015 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-13 15:00:38,015 | INFO | status : dev
+
+2023-03-13 15:00:39,246 | INFO | Logging in ...
+2023-03-13 15:00:40,525 | INFO | Email inserted.
+2023-03-13 15:00:40,700 | INFO | Password inserted.
+2023-03-13 15:00:50,828 | INFO | login button clicked.
+2023-03-13 15:00:50,828 | INFO | logged in successfully.
+2023-03-13 15:00:56,721 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 15:00:56,787 | ERROR | Error removing pop up box
+2023-03-13 15:00:59,789 | INFO | Pop up box removed...
+2023-03-13 15:01:04,807 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:01:10,973 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 15:01:11,007 | ERROR | Error removing pop up box
+2023-03-13 15:01:14,007 | INFO | Pop up box removed...
+2023-03-13 15:01:20,436 | ERROR | Error changing state of campaign or no such box to clickElementClickInterceptedException()
+2023-03-13 15:01:26,594 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 15:01:28,740 | INFO | pop up box removed..
+2023-03-13 15:01:31,743 | INFO | Pop up box removed...
+2023-03-13 15:01:36,761 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:01:42,615 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 15:01:42,688 | ERROR | Error removing pop up box
+2023-03-13 15:01:45,691 | INFO | Pop up box removed...
+2023-03-13 15:01:51,765 | ERROR | Error changing state of campaign or no such box to clickElementClickInterceptedException()
+2023-03-13 15:01:57,668 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 15:01:57,704 | ERROR | Error removing pop up box
+2023-03-13 15:02:00,705 | INFO | Pop up box removed...
+2023-03-13 15:02:06,838 | ERROR | Error changing state of campaign or no such box to clickElementClickInterceptedException()
+2023-03-13 15:02:12,526 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 15:02:12,575 | ERROR | Error removing pop up box
+2023-03-13 15:02:15,579 | INFO | Pop up box removed...
+2023-03-13 15:02:20,613 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:02:26,303 | INFO | Segment PLA and campaign_id FWRYLA0AF6K2 selected.
+2023-03-13 15:02:26,321 | ERROR | Error removing pop up box
+2023-03-13 15:02:29,323 | INFO | Pop up box removed...
+2023-03-13 15:02:34,368 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:02:40,351 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 15:02:40,366 | ERROR | Error removing pop up box
+2023-03-13 15:02:43,367 | INFO | Pop up box removed...
+2023-03-13 15:02:48,384 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:02:54,344 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 15:02:54,357 | ERROR | Error removing pop up box
+2023-03-13 15:02:57,359 | INFO | Pop up box removed...
+2023-03-13 15:03:02,376 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:03:08,378 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 15:03:08,392 | ERROR | Error removing pop up box
+2023-03-13 15:03:11,395 | INFO | Pop up box removed...
+2023-03-13 15:03:16,411 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:03:22,639 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 15:03:22,652 | ERROR | Error removing pop up box
+2023-03-13 15:03:25,655 | INFO | Pop up box removed...
+2023-03-13 15:03:30,698 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:03:36,561 | INFO | Segment PLa and campaign_id 37QKYCDW4W8M selected.
+2023-03-13 15:03:36,574 | ERROR | Error removing pop up box
+2023-03-13 15:03:39,576 | INFO | Pop up box removed...
+2023-03-13 15:03:44,607 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:03:50,687 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 15:03:50,700 | ERROR | Error removing pop up box
+2023-03-13 15:03:53,703 | INFO | Pop up box removed...
+2023-03-13 15:03:58,748 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:04:04,676 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 15:04:04,691 | ERROR | Error removing pop up box
+2023-03-13 15:04:07,691 | INFO | Pop up box removed...
+2023-03-13 15:04:12,739 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:04:18,722 | INFO | Segment PCA and campaign_id 0KY9XD0VFRND selected.
+2023-03-13 15:04:18,738 | ERROR | Error removing pop up box
+2023-03-13 15:04:21,739 | INFO | Pop up box removed...
+2023-03-13 15:04:26,785 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:04:33,142 | INFO | Segment PLA and campaign_id FWRYLA0AF6K2 selected.
+2023-03-13 15:04:33,155 | ERROR | Error removing pop up box
+2023-03-13 15:04:36,159 | INFO | Pop up box removed...
+2023-03-13 15:04:41,176 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()
+2023-03-13 15:04:47,149 | INFO | Segment PLA and campaign_id FWRYLA0AF6K2 selected.
+2023-03-13 15:04:47,164 | ERROR | Error removing pop up box
+2023-03-13 15:04:50,167 | INFO | Pop up box removed...
+2023-03-13 15:04:55,185 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException()

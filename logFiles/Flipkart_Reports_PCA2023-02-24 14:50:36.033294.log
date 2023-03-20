@@ -1,0 +1,29 @@
+2023-02-24 14:50:36,033 | INFO | Script Execution start at : 2023-02-24 14:50:36.033520
+2023-02-24 14:50:36,426 | ERROR | Module not found error : ModuleNotFoundError("No module named 'pymysql'")
+2023-02-24 14:50:36,426 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-24 14:50:36,426 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-24 14:50:36,426 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-24 14:50:36,426 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-24 14:50:36,427 | INFO | Platform : Linux
+2023-02-24 14:50:36,427 | INFO | author :  AGL 
+2023-02-24 14:50:36,427 | INFO | copyright : Copyright 2022, AGL
+2023-02-24 14:50:36,427 | INFO | credits : ['Shubham Jangid']
+2023-02-24 14:50:36,427 | INFO | license : AGL PVT LIMITED
+2023-02-24 14:50:36,427 | INFO | version : 1.0.0
+2023-02-24 14:50:36,427 | INFO | maintainer : Shubham Jangid
+2023-02-24 14:50:36,427 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-24 14:50:36,427 | INFO | status : dev
+
+2023-02-24 14:50:38,975 | INFO | Email inserted.
+2023-02-24 14:50:39,240 | INFO | Password inserted.
+2023-02-24 14:50:54,309 | INFO | login button clicked.
+2023-02-24 14:50:54,309 | INFO | logged in successfully.
+2023-02-24 14:51:10,394 | ERROR | No element found StaleElementReferenceException()
+2023-02-24 14:51:10,409 | ERROR | Error selecting PCA option NoSuchElementException()
+2023-02-24 14:51:20,481 | INFO | report type drop down cliked
+2023-02-24 14:51:50,557 | INFO | Report type selected
+2023-02-24 14:51:50,557 | ERROR |  Date div not found AttributeError("'WebDriver' object has no attribute 'find_element_by_id'")
+2023-02-24 14:51:50,573 | ERROR | Range not clicked or found NoSuchElementException()
+2023-02-24 14:52:10,653 | INFO | Download button clicked

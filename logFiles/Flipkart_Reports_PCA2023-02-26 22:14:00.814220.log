@@ -1,0 +1,18 @@
+2023-02-26 22:14:00,814 | INFO | Script Execution start at : 2023-02-26 22:14:00.814446
+2023-02-26 22:14:01,510 | ERROR | Module not found error : ModuleNotFoundError("No module named 'pymysql'")
+2023-02-26 22:14:01,511 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-26 22:14:01,511 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-26 22:14:01,511 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-26 22:14:01,511 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-26 22:14:01,511 | INFO | Platform : Linux
+2023-02-26 22:14:01,511 | INFO | author :  AGL 
+2023-02-26 22:14:01,511 | INFO | copyright : Copyright 2022, AGL
+2023-02-26 22:14:01,511 | INFO | credits : ['Shubham Jangid']
+2023-02-26 22:14:01,511 | INFO | license : AGL PVT LIMITED
+2023-02-26 22:14:01,511 | INFO | version : 1.0.0
+2023-02-26 22:14:01,511 | INFO | maintainer : Shubham Jangid
+2023-02-26 22:14:01,512 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-26 22:14:01,512 | INFO | status : dev
+

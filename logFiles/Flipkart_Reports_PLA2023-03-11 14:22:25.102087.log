@@ -1,0 +1,38 @@
+2023-03-11 14:22:25,103 | INFO | Script Execution start at : 2023-03-11 14:22:25.103415
+2023-03-11 14:22:25,714 | INFO | Module Description :  Flipkart PLA reports download module.
+
+2023-03-11 14:22:25,715 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-11 14:22:25,715 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-11 14:22:25,715 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-11 14:22:25,715 | INFO | Platform : Linux
+2023-03-11 14:22:25,715 | INFO | author :  AGL 
+2023-03-11 14:22:25,715 | INFO | copyright : Copyright 2022, AGL
+2023-03-11 14:22:25,715 | INFO | credits : ['Shubham Jangid']
+2023-03-11 14:22:25,715 | INFO | license : AGL PVT LIMITED
+2023-03-11 14:22:25,715 | INFO | version : 1.0.0
+2023-03-11 14:22:25,715 | INFO | maintainer : Shubham Jangid
+2023-03-11 14:22:25,715 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-11 14:22:25,715 | INFO | status : dev
+
+2023-03-11 14:22:30,427 | INFO | Email inserted.
+2023-03-11 14:22:30,613 | INFO | Password inserted.
+2023-03-11 14:22:40,679 | INFO | login button clicked.
+2023-03-11 14:22:40,679 | INFO | logged in successfully.
+2023-03-11 14:22:40,679 | INFO | Process start for PlacementPerformanceReport
+2023-03-11 14:22:40,679 | INFO | Process start for SearchTeamReport
+2023-03-11 14:22:50,524 | ERROR | Error removing pop up box
+2023-03-11 14:22:56,621 | INFO | ad product dropdown clicked
+2023-03-11 14:23:02,697 | INFO | PLA option selected.
+2023-03-11 14:23:04,742 | ERROR | Error clicking report type box for pla NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-11 14:23:06,757 | ERROR | error selecting option NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="popover-content"]/div/div[2]"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-11 14:23:10,886 | INFO | report type drop down cliked
+2023-03-11 14:23:18,985 | INFO | Report type selected
+2023-03-11 14:23:18,985 | INFO | Search Team Report type selected
+2023-03-11 14:23:25,113 | INFO | date div box clicked
+2023-03-11 14:23:31,257 | INFO | Range selected..
+2023-03-11 14:23:36,311 | INFO | Download button clicked
+2023-03-11 14:23:41,314 | INFO | Report download completed...
+2023-03-11 14:23:46,318 | INFO | Downloaded file name : bujq9u246uu.csv
+2023-03-11 14:23:46,319 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/plaReports/downloaded.csv
+2023-03-11 14:23:46,319 | INFO | file name changed..

@@ -1,0 +1,49 @@
+2023-03-10 13:29:33,826 | INFO | Script Execution start at : 2023-03-10 13:29:33.826716
+2023-03-10 13:29:34,312 | INFO | Module Description :  Flipkart PCA/PLA Supermart reports download module.
+
+2023-03-10 13:29:34,312 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-10 13:29:34,312 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-10 13:29:34,313 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-10 13:29:34,313 | INFO | Platform : Linux
+2023-03-10 13:29:34,313 | INFO | author :  AGL 
+2023-03-10 13:29:34,313 | INFO | copyright : Copyright 2022, AGL
+2023-03-10 13:29:34,313 | INFO | credits : ['Shubham Jangid']
+2023-03-10 13:29:34,313 | INFO | license : AGL PVT LIMITED
+2023-03-10 13:29:34,313 | INFO | version : 1.0.0
+2023-03-10 13:29:34,313 | INFO | maintainer : Shubham Jangid
+2023-03-10 13:29:34,313 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-10 13:29:34,313 | INFO | status : dev
+
+2023-03-10 13:29:37,249 | INFO | Email inserted.
+2023-03-10 13:29:37,432 | INFO | Password inserted.
+2023-03-10 13:29:47,491 | INFO | login button clicked.
+2023-03-10 13:29:47,491 | INFO | logged in successfully.
+2023-03-10 13:29:47,491 | INFO | Report downloading and inserting data for supermart pca campaign
+2023-03-10 13:29:54,263 | INFO | pop up box removed..
+2023-03-10 13:30:00,348 | INFO | drop down clicked
+2023-03-10 13:30:08,594 | INFO | supermart option selected...
+2023-03-10 13:30:19,718 | INFO | Download btn clicked! Report downloaded
+2023-03-10 13:30:24,723 | INFO | Downloaded file name : c1f0zmk7rii.csv
+2023-03-10 13:30:24,723 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-10 13:30:24,724 | INFO | file name changed..
+2023-03-10 13:30:24,724 | INFO | Downloaded file name : downloaded.csv
+2023-03-10 13:30:24,724 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-10 13:30:24,725 | INFO | file name changed..
+2023-03-10 13:30:28,202 | INFO | inserting data...
+2023-03-10 13:30:38,212 | INFO | file removed..
+2023-03-10 13:30:40,214 | INFO | done for PCA
+2023-03-10 13:30:40,214 | INFO | Report downloading and inserting data for supermart pla campaign
+2023-03-10 13:30:46,511 | INFO | pop up box removed..
+2023-03-10 13:30:52,574 | INFO | drop down clicked
+2023-03-10 13:31:00,674 | INFO | supermart option selected...
+2023-03-10 13:31:11,742 | INFO | Download btn clicked! Report downloaded
+2023-03-10 13:31:16,746 | INFO | Downloaded file name : wmabyyja64b.csv
+2023-03-10 13:31:16,746 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-10 13:31:16,747 | INFO | file name changed..
+2023-03-10 13:31:16,747 | INFO | Downloaded file name : downloaded.csv
+2023-03-10 13:31:16,747 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-10 13:31:16,747 | INFO | file name changed..
+2023-03-10 13:31:20,180 | INFO | inserting data...
+2023-03-10 13:31:30,190 | INFO | file removed..
+2023-03-10 13:31:32,193 | INFO | done for PCA

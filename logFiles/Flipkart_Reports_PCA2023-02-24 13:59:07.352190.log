@@ -1,0 +1,27 @@
+2023-02-24 13:59:07,352 | INFO | Script Execution start at : 2023-02-24 13:59:07.352422
+2023-02-24 13:59:07,702 | ERROR | Module not found error : ModuleNotFoundError("No module named 'pymysql'")
+2023-02-24 13:59:07,702 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-24 13:59:07,702 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-24 13:59:07,702 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-24 13:59:07,702 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-24 13:59:07,702 | INFO | Platform : Linux
+2023-02-24 13:59:07,703 | INFO | author :  AGL 
+2023-02-24 13:59:07,703 | INFO | copyright : Copyright 2022, AGL
+2023-02-24 13:59:07,703 | INFO | credits : ['Shubham Jangid']
+2023-02-24 13:59:07,703 | INFO | license : AGL PVT LIMITED
+2023-02-24 13:59:07,703 | INFO | version : 1.0.0
+2023-02-24 13:59:07,703 | INFO | maintainer : Shubham Jangid
+2023-02-24 13:59:07,703 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-24 13:59:07,703 | INFO | status : dev
+
+2023-02-24 13:59:09,753 | INFO | Email inserted.
+2023-02-24 13:59:09,928 | INFO | Password inserted.
+2023-02-24 13:59:09,977 | INFO | login button clicked.
+2023-02-24 13:59:09,977 | INFO | logged in successfully.
+2023-02-24 13:59:12,513 | ERROR | No element found NoSuchElementException()
+2023-02-24 13:59:12,526 | ERROR | Error selecting PCA option NoSuchElementException()
+2023-02-24 13:59:12,539 | ERROR | Error click report type drop down NoSuchElementException()
+2023-02-24 13:59:12,550 | ERROR | Error selecting report type NoSuchElementException()
+2023-02-24 13:59:12,561 | ERROR | Error downloading selected report.

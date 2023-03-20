@@ -1,0 +1,30 @@
+2023-03-20 22:35:22,516 | INFO | Script Execution start at : 2023-03-20 22:35:22.516069
+2023-03-20 22:35:23,071 | INFO | Module Description :  Flipkart Campaign set bit PLA automation script.
+
+2023-03-20 22:35:23,072 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-20 22:35:23,072 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-20 22:35:23,072 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-20 22:35:23,072 | INFO | Platform : Linux
+2023-03-20 22:35:23,072 | INFO | author :  AGL 
+2023-03-20 22:35:23,072 | INFO | copyright : Copyright 2022, AGL
+2023-03-20 22:35:23,072 | INFO | credits : ['Shubham Jangid']
+2023-03-20 22:35:23,072 | INFO | license : AGL PVT LIMITED
+2023-03-20 22:35:23,072 | INFO | version : 1.0.0
+2023-03-20 22:35:23,072 | INFO | maintainer : Shubham Jangid
+2023-03-20 22:35:23,072 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-20 22:35:23,072 | INFO | status : dev
+
+2023-03-20 22:35:24,407 | INFO | Logging in ...
+2023-03-20 22:35:25,783 | INFO | Email inserted.
+2023-03-20 22:35:25,959 | INFO | Password inserted.
+2023-03-20 22:35:36,030 | INFO | login button clicked.
+2023-03-20 22:35:36,031 | INFO | logged in successfully.
+2023-03-20 22:35:47,709 | INFO | pop up box removed..
+2023-03-20 22:35:50,739 | ERROR | Error removing pop up box
+2023-03-20 22:35:53,773 | INFO | Error clicking on next btn NoSuchElementException()
+2023-03-20 22:35:56,814 | INFO | Error clicking on next btn NoSuchElementException()
+2023-03-20 22:35:59,854 | ERROR | Error in set bid for pla campaign.. NoSuchElementException()
+2023-03-20 22:36:01,899 | INFO | Error clicking on save ad group btn NoSuchElementException()
+2023-03-20 22:36:08,104 | INFO | final continue btn clicked
+2023-03-20 22:36:14,150 | INFO | submit btn clicked

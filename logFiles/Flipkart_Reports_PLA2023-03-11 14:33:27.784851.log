@@ -1,0 +1,37 @@
+2023-03-11 14:33:27,785 | INFO | Script Execution start at : 2023-03-11 14:33:27.785699
+2023-03-11 14:33:28,253 | INFO | Module Description :  Flipkart PLA reports download module.
+
+2023-03-11 14:33:28,253 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-11 14:33:28,253 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-11 14:33:28,253 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-11 14:33:28,254 | INFO | Platform : Linux
+2023-03-11 14:33:28,254 | INFO | author :  AGL 
+2023-03-11 14:33:28,254 | INFO | copyright : Copyright 2022, AGL
+2023-03-11 14:33:28,254 | INFO | credits : ['Shubham Jangid']
+2023-03-11 14:33:28,254 | INFO | license : AGL PVT LIMITED
+2023-03-11 14:33:28,254 | INFO | version : 1.0.0
+2023-03-11 14:33:28,254 | INFO | maintainer : Shubham Jangid
+2023-03-11 14:33:28,254 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-11 14:33:28,254 | INFO | status : dev
+
+2023-03-11 14:33:31,303 | INFO | Email inserted.
+2023-03-11 14:33:31,488 | INFO | Password inserted.
+2023-03-11 14:33:41,574 | INFO | login button clicked.
+2023-03-11 14:33:41,575 | INFO | logged in successfully.
+2023-03-11 14:33:41,575 | INFO | Process start for PlacementPerformanceReport
+2023-03-11 14:33:41,575 | INFO | Process start for SearchTeamReport
+2023-03-11 14:33:53,042 | INFO | pop up box removed..
+2023-03-11 14:33:59,186 | INFO | ad product dropdown clicked
+2023-03-11 14:34:05,254 | INFO | PLA option selected.
+2023-03-11 14:34:07,302 | ERROR | Error clicking report type box for pla NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-11 14:34:09,338 | ERROR | error selecting option NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="popover-content"]/div/div[2]"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-11 14:34:13,471 | INFO | report type drop down cliked
+2023-03-11 14:34:21,538 | INFO | Report type selected
+2023-03-11 14:34:21,539 | INFO | Search Team Report type selected
+2023-03-11 14:34:23,551 | ERROR |  Date div not found NoSuchWindowException('no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-11 14:34:25,557 | ERROR | Range not clicked or element not found NoSuchWindowException('no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-11 14:34:27,561 | ERROR | Error downloading selected report.
+2023-03-11 14:34:32,566 | INFO | Downloaded file name : downloaded.csv
+2023-03-11 14:34:32,567 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/plaReports/downloaded.csv
+2023-03-11 14:34:32,567 | INFO | file name changed..

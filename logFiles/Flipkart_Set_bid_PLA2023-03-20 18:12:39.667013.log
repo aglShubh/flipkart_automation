@@ -1,0 +1,27 @@
+2023-03-20 18:12:39,667 | INFO | Script Execution start at : 2023-03-20 18:12:39.667467
+2023-03-20 18:12:40,173 | INFO | Module Description :  Flipkart Campaign set bit PLA automation script.
+
+2023-03-20 18:12:40,173 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-20 18:12:40,174 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-20 18:12:40,174 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-20 18:12:40,174 | INFO | Platform : Linux
+2023-03-20 18:12:40,174 | INFO | author :  AGL 
+2023-03-20 18:12:40,174 | INFO | copyright : Copyright 2022, AGL
+2023-03-20 18:12:40,174 | INFO | credits : ['Shubham Jangid']
+2023-03-20 18:12:40,174 | INFO | license : AGL PVT LIMITED
+2023-03-20 18:12:40,174 | INFO | version : 1.0.0
+2023-03-20 18:12:40,174 | INFO | maintainer : Shubham Jangid
+2023-03-20 18:12:40,174 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-20 18:12:40,174 | INFO | status : dev
+
+2023-03-20 18:12:41,448 | INFO | Logging in ...
+2023-03-20 18:12:42,507 | INFO | Email inserted.
+2023-03-20 18:12:42,675 | INFO | Password inserted.
+2023-03-20 18:12:52,745 | INFO | login button clicked.
+2023-03-20 18:12:52,745 | INFO | logged in successfully.
+2023-03-20 18:13:03,573 | INFO | pop up box removed..
+2023-03-20 18:13:09,762 | ERROR | Error in set bid for pla campaign.. ElementClickInterceptedException()
+2023-03-20 18:13:14,884 | INFO | final continue btn clicked
+2023-03-20 18:13:20,941 | INFO | submit btn clicked
+2023-03-20 18:13:33,461 | INFO | pop up box removed..

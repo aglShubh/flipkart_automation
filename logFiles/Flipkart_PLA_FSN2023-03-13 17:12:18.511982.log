@@ -1,0 +1,25 @@
+2023-03-13 17:12:18,512 | INFO | Script Execution start at : 2023-03-13 17:12:18.512218
+2023-03-13 17:12:18,879 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-03-13 17:12:18,879 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-13 17:12:18,879 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-13 17:12:18,880 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-13 17:12:18,880 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-13 17:12:18,880 | INFO | Platform : Linux
+2023-03-13 17:12:18,880 | INFO | author :  AGL 
+2023-03-13 17:12:18,880 | INFO | copyright : Copyright 2022, AGL
+2023-03-13 17:12:18,880 | INFO | credits : ['Shubham Jangid']
+2023-03-13 17:12:18,880 | INFO | license : AGL PVT LIMITED
+2023-03-13 17:12:18,880 | INFO | version : 1.0.0
+2023-03-13 17:12:18,880 | INFO | maintainer : Shubham Jangid
+2023-03-13 17:12:18,880 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-13 17:12:18,880 | INFO | status : dev
+
+2023-03-13 17:12:29,961 | ERROR | ERROR: Unexpected error: Could not connect to MySQL instance.
+2023-03-13 17:12:29,961 | ERROR | (2003, "Can't connect to MySQL server on '43.204.245.132' (timed out)")
+2023-03-13 17:12:29,961 | INFO | Logging in ...
+2023-03-13 17:12:31,395 | INFO | Email inserted.
+2023-03-13 17:12:31,608 | INFO | Password inserted.
+2023-03-13 17:12:41,731 | INFO | login button clicked.
+2023-03-13 17:12:41,732 | INFO | logged in successfully.

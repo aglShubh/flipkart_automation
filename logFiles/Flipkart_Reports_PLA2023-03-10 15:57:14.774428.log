@@ -1,0 +1,40 @@
+2023-03-10 15:57:14,774 | INFO | Script Execution start at : 2023-03-10 15:57:14.774747
+2023-03-10 15:57:15,250 | INFO | Module Description :  Flipkart PLA reports download module.
+
+2023-03-10 15:57:15,250 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-10 15:57:15,250 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-10 15:57:15,250 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-10 15:57:15,250 | INFO | Platform : Linux
+2023-03-10 15:57:15,250 | INFO | author :  AGL 
+2023-03-10 15:57:15,250 | INFO | copyright : Copyright 2022, AGL
+2023-03-10 15:57:15,250 | INFO | credits : ['Shubham Jangid']
+2023-03-10 15:57:15,251 | INFO | license : AGL PVT LIMITED
+2023-03-10 15:57:15,251 | INFO | version : 1.0.0
+2023-03-10 15:57:15,251 | INFO | maintainer : Shubham Jangid
+2023-03-10 15:57:15,251 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-10 15:57:15,251 | INFO | status : dev
+
+2023-03-10 15:57:18,152 | INFO | Email inserted.
+2023-03-10 15:57:18,336 | INFO | Password inserted.
+2023-03-10 15:57:28,390 | INFO | login button clicked.
+2023-03-10 15:57:28,391 | INFO | logged in successfully.
+2023-03-10 15:57:28,391 | INFO | Process start for PlacementPerformanceReport
+2023-03-10 15:57:37,578 | INFO | pop up box removed..
+2023-03-10 15:57:43,654 | INFO | ad product dropdown clicked
+2023-03-10 15:57:49,708 | INFO | PLA option selected.
+2023-03-10 15:57:51,805 | INFO | click report for box clicked
+2023-03-10 15:57:53,895 | INFO | flipkart supermart option selected
+2023-03-10 15:57:58,019 | INFO | report type drop down cliked
+2023-03-10 15:58:06,086 | INFO | Report type selected
+2023-03-10 15:58:06,086 | INFO | Placement Report type selected
+2023-03-10 15:58:12,218 | INFO | date div box clicked
+2023-03-10 15:58:18,278 | INFO | Range selected..
+2023-03-10 15:58:23,337 | INFO | Download button clicked
+2023-03-10 15:58:28,338 | INFO | Report download completed...
+2023-03-10 15:58:33,342 | INFO | Downloaded file name : utthg2s6kp.csv
+2023-03-10 15:58:33,343 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/plaReports/downloaded.csv
+2023-03-10 15:58:33,343 | INFO | file name changed..
+2023-03-10 15:58:33,343 | INFO | Downloaded file name : downloaded.csv
+2023-03-10 15:58:33,343 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/plaReports/downloaded.csv
+2023-03-10 15:58:33,343 | INFO | file name changed..

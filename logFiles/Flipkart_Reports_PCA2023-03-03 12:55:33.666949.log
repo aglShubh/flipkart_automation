@@ -1,0 +1,27 @@
+2023-03-03 12:55:33,667 | INFO | Script Execution start at : 2023-03-03 12:55:33.667178
+2023-03-03 12:55:34,181 | INFO | Module Description :  Flipkart PCA reports download module.
+
+2023-03-03 12:55:34,181 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-03 12:55:34,181 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-03 12:55:34,181 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-03-03 12:55:34,181 | INFO | Platform : Linux
+2023-03-03 12:55:34,181 | INFO | author :  AGL 
+2023-03-03 12:55:34,181 | INFO | copyright : Copyright 2022, AGL
+2023-03-03 12:55:34,181 | INFO | credits : ['Shubham Jangid']
+2023-03-03 12:55:34,181 | INFO | license : AGL PVT LIMITED
+2023-03-03 12:55:34,181 | INFO | version : 1.0.0
+2023-03-03 12:55:34,181 | INFO | maintainer : Shubham Jangid
+2023-03-03 12:55:34,181 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-03 12:55:34,181 | INFO | status : dev
+
+2023-03-03 12:55:38,196 | INFO | Email inserted.
+2023-03-03 12:55:38,551 | INFO | Password inserted.
+2023-03-03 12:55:48,650 | INFO | login button clicked.
+2023-03-03 12:55:48,650 | INFO | logged in successfully.
+2023-03-03 12:55:50,786 | INFO | pop up box removed..
+2023-03-03 12:55:54,846 | INFO | pca_options clicked
+2023-03-03 12:55:54,859 | ERROR | Error selecting PCA option NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="popover-content"]/div/div[2]"}\n  (Session info: chrome=110.0.5481.177)', None, None)
+2023-03-03 12:55:54,871 | ERROR |  Date div not found NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div"}\n  (Session info: chrome=110.0.5481.177)', None, None)
+2023-03-03 12:55:54,890 | ERROR | Range not clicked or element not found InvalidSelectorException('invalid selector: Unable to locate an element with the xpath expression <td class="styles__Day-sc-1y1pqap-5 brOAVO selected inRange top-row">2</td> because of the following error:\nSyntaxError: Failed to execute \'evaluate\' on \'Document\': The string \'<td class="styles__Day-sc-1y1pqap-5 brOAVO selected inRange top-row">2</td>\' is not a valid XPath expression.\n  (Session info: chrome=110.0.5481.177)', None, None)
+2023-03-03 12:55:54,890 | INFO | Process start for ConsolidatedDailyReport

@@ -1,0 +1,41 @@
+2023-02-27 11:49:00,768 | INFO | Script Execution start at : 2023-02-27 11:49:00.768171
+2023-02-27 11:49:01,133 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 11:49:01,133 | INFO | Module Description :  Flipkart PLA reports download module.
+
+2023-02-27 11:49:01,133 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 11:49:01,133 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 11:49:01,133 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 11:49:01,133 | INFO | Platform : Linux
+2023-02-27 11:49:01,134 | INFO | author :  AGL 
+2023-02-27 11:49:01,134 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 11:49:01,134 | INFO | credits : ['Shubham Jangid']
+2023-02-27 11:49:01,134 | INFO | license : AGL PVT LIMITED
+2023-02-27 11:49:01,134 | INFO | version : 1.0.0
+2023-02-27 11:49:01,134 | INFO | maintainer : Shubham Jangid
+2023-02-27 11:49:01,134 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 11:49:01,134 | INFO | status : dev
+
+2023-02-27 11:49:03,413 | INFO | Email inserted.
+2023-02-27 11:49:03,599 | INFO | Password inserted.
+2023-02-27 11:49:13,656 | INFO | login button clicked.
+2023-02-27 11:49:13,656 | INFO | logged in successfully.
+2023-02-27 11:49:13,656 | INFO | Process start for ConsolidatedDailyReport
+2023-02-27 11:49:21,743 | INFO | pop up box removed..
+2023-02-27 11:49:27,911 | INFO | ad product dropdown clicked
+2023-02-27 11:49:33,986 | INFO | PLA option selected.
+2023-02-27 11:49:36,087 | INFO | click report for box clicked
+2023-02-27 11:49:38,142 | INFO | flipkart supermart option selected
+2023-02-27 11:49:42,206 | INFO | report type drop down cliked
+2023-02-27 11:49:50,271 | INFO | Report type selected
+2023-02-27 11:49:50,271 | INFO | Consolidated Report type selected
+2023-02-27 11:49:56,393 | INFO | date div box clicked
+2023-02-27 11:50:02,537 | INFO | Range selected..
+2023-02-27 11:50:07,595 | INFO | Download button clicked
+2023-02-27 11:50:12,599 | INFO | Report download completed...
+2023-02-27 11:50:14,602 | INFO | Downloaded file name : m1hbwn2j3il.csv
+2023-02-27 11:50:14,602 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/plaReports/downloaded.csv
+2023-02-27 11:50:14,602 | INFO | file name changed..
+2023-02-27 11:50:20,925 | INFO | inserting data...
+2023-02-27 11:50:30,938 | INFO | file removed..
+2023-02-27 11:50:30,939 | INFO | Process done for ConsolidatedDailyReport

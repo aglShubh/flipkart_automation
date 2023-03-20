@@ -1,0 +1,30 @@
+2023-02-25 12:40:32,525 | INFO | Script Execution start at : 2023-02-25 12:40:32.525873
+2023-02-25 12:40:32,878 | ERROR | Module not found error : ModuleNotFoundError("No module named 'pymysql'")
+2023-02-25 12:40:32,879 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-25 12:40:32,879 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-25 12:40:32,879 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-25 12:40:32,879 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-25 12:40:32,879 | INFO | Platform : Linux
+2023-02-25 12:40:32,879 | INFO | author :  AGL 
+2023-02-25 12:40:32,879 | INFO | copyright : Copyright 2022, AGL
+2023-02-25 12:40:32,879 | INFO | credits : ['Shubham Jangid']
+2023-02-25 12:40:32,879 | INFO | license : AGL PVT LIMITED
+2023-02-25 12:40:32,879 | INFO | version : 1.0.0
+2023-02-25 12:40:32,879 | INFO | maintainer : Shubham Jangid
+2023-02-25 12:40:32,879 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-25 12:40:32,879 | INFO | status : dev
+
+2023-02-25 12:40:35,158 | INFO | Email inserted.
+2023-02-25 12:40:35,364 | INFO | Password inserted.
+2023-02-25 12:40:50,453 | INFO | login button clicked.
+2023-02-25 12:40:50,453 | INFO | logged in successfully.
+2023-02-25 12:40:58,393 | INFO | pop up box removed..
+2023-02-25 12:41:06,473 | INFO | ad product dropdown clicked
+2023-02-25 12:41:14,533 | INFO | PCA option selected.
+2023-02-25 12:41:16,548 | ERROR | Error click report type drop down NoSuchElementException()
+2023-02-25 12:41:18,574 | ERROR | Error selecting report type NoSuchElementException()
+2023-02-25 12:41:20,619 | ERROR |  Date div not found NoSuchElementException()
+2023-02-25 12:41:22,634 | ERROR | Range not clicked or found NoSuchElementException()
+2023-02-25 12:41:24,648 | ERROR | Error downloading selected report.

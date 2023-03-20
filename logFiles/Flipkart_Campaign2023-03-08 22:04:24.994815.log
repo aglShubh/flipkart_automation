@@ -1,0 +1,21 @@
+2023-03-08 22:04:24,997 | INFO | Script Execution start at : 2023-03-08 22:04:24.997557
+2023-03-08 22:04:25,502 | INFO | Module Description :  Flipkart Campaign automation script.
+
+2023-03-08 22:04:25,502 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-08 22:04:25,502 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-08 22:04:25,502 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-08 22:04:25,502 | INFO | Platform : Linux
+2023-03-08 22:04:25,502 | INFO | author :  AGL 
+2023-03-08 22:04:25,502 | INFO | copyright : Copyright 2022, AGL
+2023-03-08 22:04:25,503 | INFO | credits : ['Shubham Jangid']
+2023-03-08 22:04:25,503 | INFO | license : AGL PVT LIMITED
+2023-03-08 22:04:25,503 | INFO | version : 1.0.0
+2023-03-08 22:04:25,503 | INFO | maintainer : Shubham Jangid
+2023-03-08 22:04:25,503 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-08 22:04:25,503 | INFO | status : dev
+
+2023-03-08 22:04:28,726 | INFO | Email inserted.
+2023-03-08 22:04:28,907 | INFO | Password inserted.
+2023-03-08 22:04:38,994 | INFO | login button clicked.
+2023-03-08 22:04:38,995 | INFO | logged in successfully.

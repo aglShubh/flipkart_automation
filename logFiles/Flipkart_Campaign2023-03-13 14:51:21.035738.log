@@ -1,0 +1,59 @@
+2023-03-13 14:51:21,036 | INFO | Script Execution start at : 2023-03-13 14:51:21.036014
+2023-03-13 14:51:21,637 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-03-13 14:51:21,637 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-13 14:51:21,637 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-13 14:51:21,637 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-13 14:51:21,637 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-13 14:51:21,637 | INFO | Platform : Linux
+2023-03-13 14:51:21,637 | INFO | author :  AGL 
+2023-03-13 14:51:21,637 | INFO | copyright : Copyright 2022, AGL
+2023-03-13 14:51:21,637 | INFO | credits : ['Shubham Jangid']
+2023-03-13 14:51:21,637 | INFO | license : AGL PVT LIMITED
+2023-03-13 14:51:21,638 | INFO | version : 1.0.0
+2023-03-13 14:51:21,638 | INFO | maintainer : Shubham Jangid
+2023-03-13 14:51:21,638 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-13 14:51:21,638 | INFO | status : dev
+
+2023-03-13 14:51:22,912 | INFO | Logging in ...
+2023-03-13 14:51:24,069 | INFO | Email inserted.
+2023-03-13 14:51:24,251 | INFO | Password inserted.
+2023-03-13 14:51:34,347 | INFO | login button clicked.
+2023-03-13 14:51:34,348 | INFO | logged in successfully.
+2023-03-13 14:51:40,441 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 14:51:42,866 | INFO | pop up box removed..
+2023-03-13 14:51:45,868 | INFO | Pop up box removed...
+2023-03-13 14:51:50,884 | ERROR | Error changing state of campaign NoSuchElementException()
+2023-03-13 14:51:56,914 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 14:51:56,967 | ERROR | Error removing pop up box
+2023-03-13 14:51:59,967 | INFO | Pop up box removed...
+2023-03-13 14:52:06,140 | ERROR | Error changing state of campaign ElementClickInterceptedException()
+2023-03-13 14:52:12,434 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 14:52:12,547 | ERROR | Error removing pop up box
+2023-03-13 14:52:15,548 | INFO | Pop up box removed...
+2023-03-13 14:52:20,595 | ERROR | Error changing state of campaign NoSuchElementException()
+2023-03-13 14:52:26,537 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 14:52:26,568 | ERROR | Error removing pop up box
+2023-03-13 14:52:29,571 | INFO | Pop up box removed...
+2023-03-13 14:52:35,628 | ERROR | Error changing state of campaign ElementClickInterceptedException()
+2023-03-13 14:52:41,469 | INFO | Segment pca and campaign_id 3DQQ674515LR selected.
+2023-03-13 14:52:41,506 | ERROR | Error removing pop up box
+2023-03-13 14:52:44,510 | INFO | Pop up box removed...
+2023-03-13 14:52:50,669 | ERROR | Error changing state of campaign ElementClickInterceptedException()
+2023-03-13 14:53:03,272 | INFO | Segment pla and campaign_id 11A55Y8T1P73 selected.
+2023-03-13 14:53:03,339 | ERROR | Error removing pop up box
+2023-03-13 14:53:06,340 | INFO | Pop up box removed...
+2023-03-13 14:53:11,354 | ERROR | Error changing state of campaign NoSuchElementException()
+2023-03-13 14:53:17,401 | INFO | Segment PLA and campaign_id FWRYLA0AF6K2 selected.
+2023-03-13 14:53:17,416 | ERROR | Error removing pop up box
+2023-03-13 14:53:20,419 | INFO | Pop up box removed...
+2023-03-13 14:53:25,436 | ERROR | Error changing state of campaign NoSuchElementException()
+2023-03-13 14:53:31,568 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 14:53:31,612 | ERROR | Error removing pop up box
+2023-03-13 14:53:34,615 | INFO | Pop up box removed...
+2023-03-13 14:53:39,636 | ERROR | Error changing state of campaign NoSuchElementException()
+2023-03-13 14:53:45,558 | INFO | Segment PCA and campaign_id 2SSI4JORNFIF selected.
+2023-03-13 14:53:45,595 | ERROR | Error removing pop up box
+2023-03-13 14:53:48,596 | INFO | Pop up box removed...
+2023-03-13 14:53:53,608 | ERROR | Error changing state of campaign NoSuchWindowException()

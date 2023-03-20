@@ -1,0 +1,54 @@
+2023-03-15 11:10:30,550 | INFO | Script Execution start at : 2023-03-15 11:10:30.550009
+2023-03-15 11:10:31,159 | INFO | Module Description :  Flipkart PCA/PLA Supermart reports download module.
+
+2023-03-15 11:10:31,159 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-15 11:10:31,159 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-15 11:10:31,159 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-15 11:10:31,159 | INFO | Platform : Linux
+2023-03-15 11:10:31,159 | INFO | author :  AGL 
+2023-03-15 11:10:31,159 | INFO | copyright : Copyright 2022, AGL
+2023-03-15 11:10:31,159 | INFO | credits : ['Shubham Jangid']
+2023-03-15 11:10:31,159 | INFO | license : AGL PVT LIMITED
+2023-03-15 11:10:31,159 | INFO | version : 1.0.0
+2023-03-15 11:10:31,159 | INFO | maintainer : Shubham Jangid
+2023-03-15 11:10:31,159 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-15 11:10:31,159 | INFO | status : dev
+
+2023-03-15 11:10:35,116 | INFO | Email inserted.
+2023-03-15 11:10:35,309 | INFO | Password inserted.
+2023-03-15 11:10:45,363 | INFO | login button clicked.
+2023-03-15 11:10:45,363 | INFO | logged in successfully.
+2023-03-15 11:10:45,363 | INFO | Report downloading and inserting data for supermart pca campaign
+2023-03-15 11:10:49,461 | ERROR | Error clicking account dropdown ElementClickInterceptedException('element click intercepted: Element <span class="styles__GroupNameWrapper-sc-15k3kqb-16 fFvRSq">...</span> is not clickable at point (1254, 24). Other element would receive the click: <div class="styles__MouseEventsBlockingOverlay-sc-13lgkj1-2 dYbIyd"></div>\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-15 11:10:52,476 | INFO | Error selecting account NoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="popover-content"]/div/div[1]/div[2]/a[3]/div/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-15 11:10:57,523 | INFO | pop up box removed..
+2023-03-15 11:11:03,738 | INFO | pop up box removed..
+2023-03-15 11:11:09,828 | INFO | drop down clicked
+2023-03-15 11:11:17,971 | INFO | supermart option selected...
+2023-03-15 11:11:21,065 | INFO | date box clicked
+2023-03-15 11:11:24,166 | INFO | Date range selected
+2023-03-15 11:11:35,242 | INFO | Download btn clicked! Report downloaded
+2023-03-15 11:11:40,248 | INFO | Downloaded file name : 3h5lsdcvv96.csv
+2023-03-15 11:11:40,248 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-15 11:11:40,248 | INFO | file name changed..
+2023-03-15 11:11:43,684 | INFO | inserting data...
+2023-03-15 11:11:53,693 | INFO | file removed..
+2023-03-15 11:11:55,695 | INFO | done for PCA
+2023-03-15 11:11:55,695 | INFO | Report downloading and inserting data for supermart pla campaign
+2023-03-15 11:12:01,814 | INFO | account dropdown clicked
+2023-03-15 11:12:11,995 | INFO | Account selected Mars
+2023-03-15 11:12:17,050 | INFO | pop up box removed..
+2023-03-15 11:12:21,121 | ERROR | Error removing pop up box
+2023-03-15 11:12:27,206 | INFO | drop down clicked
+2023-03-15 11:12:35,348 | INFO | supermart option selected...
+2023-03-15 11:12:38,429 | INFO | date box clicked
+2023-03-15 11:12:41,531 | INFO | Date range selected
+2023-03-15 11:12:52,621 | INFO | Download btn clicked! Report downloaded
+2023-03-15 11:12:57,623 | INFO | Downloaded file name : v3miut8j99r.csv
+2023-03-15 11:12:57,623 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-15 11:12:57,623 | INFO | file name changed..
+2023-03-15 11:13:01,089 | INFO | inserting data...
+2023-03-15 11:13:11,099 | INFO | file removed..
+2023-03-15 11:13:13,101 | INFO | done for PLA
+2023-03-15 11:13:16,184 | INFO | Browser Exit..

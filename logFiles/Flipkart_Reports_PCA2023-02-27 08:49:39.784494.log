@@ -1,0 +1,31 @@
+2023-02-27 08:49:39,784 | INFO | Script Execution start at : 2023-02-27 08:49:39.784724
+2023-02-27 08:49:40,136 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 08:49:40,136 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-27 08:49:40,136 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 08:49:40,136 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 08:49:40,136 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 08:49:40,136 | INFO | Platform : Linux
+2023-02-27 08:49:40,136 | INFO | author :  AGL 
+2023-02-27 08:49:40,136 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 08:49:40,136 | INFO | credits : ['Shubham Jangid']
+2023-02-27 08:49:40,136 | INFO | license : AGL PVT LIMITED
+2023-02-27 08:49:40,136 | INFO | version : 1.0.0
+2023-02-27 08:49:40,136 | INFO | maintainer : Shubham Jangid
+2023-02-27 08:49:40,136 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 08:49:40,136 | INFO | status : dev
+
+2023-02-27 08:49:43,004 | INFO | Email inserted.
+2023-02-27 08:49:43,187 | INFO | Password inserted.
+2023-02-27 08:49:53,245 | INFO | login button clicked.
+2023-02-27 08:49:53,245 | INFO | logged in successfully.
+2023-02-27 08:50:08,546 | INFO | pop up box removed..
+2023-02-27 08:50:14,682 | INFO | ad product dropdown clicked
+2023-02-27 08:50:20,846 | INFO | PCA option selected.
+2023-02-27 08:50:25,013 | INFO | report type drop down cliked
+2023-02-27 08:50:32,195 | ERROR | Error selecting report type ElementClickInterceptedException()
+2023-02-27 08:50:32,195 | INFO | PlacementPerformanceReport Selected...
+2023-02-27 08:50:38,451 | INFO | date div box clicked
+2023-02-27 08:50:42,492 | ERROR | Range not clicked or element not found StaleElementReferenceException()
+2023-02-27 08:50:47,564 | INFO | Download button clicked

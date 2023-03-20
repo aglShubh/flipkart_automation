@@ -1,0 +1,30 @@
+2023-03-15 11:41:02,630 | INFO | Script Execution start at : 2023-03-15 11:41:02.630263
+2023-03-15 11:41:03,374 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-15 11:41:03,374 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-15 11:41:03,374 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-15 11:41:03,374 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-15 11:41:03,374 | INFO | Platform : Linux
+2023-03-15 11:41:03,374 | INFO | author :  AGL 
+2023-03-15 11:41:03,375 | INFO | copyright : Copyright 2022, AGL
+2023-03-15 11:41:03,375 | INFO | credits : ['Shubham Jangid']
+2023-03-15 11:41:03,375 | INFO | license : AGL PVT LIMITED
+2023-03-15 11:41:03,375 | INFO | version : 1.0.0
+2023-03-15 11:41:03,375 | INFO | maintainer : Shubham Jangid
+2023-03-15 11:41:03,375 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-15 11:41:03,375 | INFO | status : dev
+
+2023-03-15 11:41:05,203 | INFO | Logging in ...
+2023-03-15 11:41:06,392 | INFO | Email inserted.
+2023-03-15 11:41:06,585 | INFO | Password inserted.
+2023-03-15 11:41:16,643 | INFO | login button clicked.
+2023-03-15 11:41:16,643 | INFO | logged in successfully.
+2023-03-15 11:41:25,287 | INFO | Segment PLA and campaign_id 5WTD9PU15QX0 selected.
+2023-03-15 11:41:25,300 | ERROR | Error removing pop up box
+2023-03-15 11:41:28,303 | INFO | Pop up box removed...
+2023-03-15 11:41:33,321 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)
+2023-03-15 11:41:44,013 | INFO | Segment PLA and campaign_id 6XNJG6ORC2NO selected.
+2023-03-15 11:41:44,027 | ERROR | Error removing pop up box
+2023-03-15 11:41:47,030 | INFO | Pop up box removed...
+2023-03-15 11:41:52,044 | ERROR | Error changing state of campaign or no such box to clickNoSuchElementException('no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div"}\n  (Session info: chrome=111.0.5563.64)', None, None)

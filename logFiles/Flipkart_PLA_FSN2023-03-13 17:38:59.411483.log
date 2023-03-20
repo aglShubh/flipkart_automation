@@ -1,0 +1,29 @@
+2023-03-13 17:38:59,412 | INFO | Script Execution start at : 2023-03-13 17:38:59.411981
+2023-03-13 17:38:59,800 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-03-13 17:38:59,800 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-13 17:38:59,800 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-13 17:38:59,800 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-13 17:38:59,800 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-13 17:38:59,800 | INFO | Platform : Linux
+2023-03-13 17:38:59,801 | INFO | author :  AGL 
+2023-03-13 17:38:59,801 | INFO | copyright : Copyright 2022, AGL
+2023-03-13 17:38:59,801 | INFO | credits : ['Shubham Jangid']
+2023-03-13 17:38:59,801 | INFO | license : AGL PVT LIMITED
+2023-03-13 17:38:59,801 | INFO | version : 1.0.0
+2023-03-13 17:38:59,801 | INFO | maintainer : Shubham Jangid
+2023-03-13 17:38:59,801 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-13 17:38:59,801 | INFO | status : dev
+
+2023-03-13 17:39:02,147 | INFO | Logging in ...
+2023-03-13 17:39:03,544 | INFO | Email inserted.
+2023-03-13 17:39:03,751 | INFO | Password inserted.
+2023-03-13 17:39:13,810 | INFO | login button clicked.
+2023-03-13 17:39:13,811 | INFO | logged in successfully.
+2023-03-13 17:39:27,209 | INFO | Segment pla and campaign_id 37QKYCDW4W8M and ad_group_id YAA5HXR0PPJ0 selected.
+2023-03-13 17:39:29,253 | INFO | pop up box removed..
+2023-03-13 17:39:32,255 | INFO | Pop up box removed...
+2023-03-13 17:39:43,325 | INFO | input box focused..
+2023-03-13 17:39:50,427 | INFO | fsn id set
+2023-03-13 17:39:55,989 | INFO | FSN State changed.

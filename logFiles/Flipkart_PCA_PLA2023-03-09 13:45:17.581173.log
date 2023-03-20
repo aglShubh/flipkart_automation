@@ -1,0 +1,32 @@
+2023-03-09 13:45:17,581 | INFO | Script Execution start at : 2023-03-09 13:45:17.581402
+2023-03-09 13:45:18,074 | INFO | Module Description :  Flipkart PCA/PLA Supermart reports download module.
+
+2023-03-09 13:45:18,074 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-09 13:45:18,074 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-09 13:45:18,074 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-09 13:45:18,074 | INFO | Platform : Linux
+2023-03-09 13:45:18,075 | INFO | author :  AGL 
+2023-03-09 13:45:18,075 | INFO | copyright : Copyright 2022, AGL
+2023-03-09 13:45:18,075 | INFO | credits : ['Shubham Jangid']
+2023-03-09 13:45:18,075 | INFO | license : AGL PVT LIMITED
+2023-03-09 13:45:18,075 | INFO | version : 1.0.0
+2023-03-09 13:45:18,075 | INFO | maintainer : Shubham Jangid
+2023-03-09 13:45:18,075 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-09 13:45:18,075 | INFO | status : dev
+
+2023-03-09 13:45:22,281 | INFO | Email inserted.
+2023-03-09 13:45:22,484 | INFO | Password inserted.
+2023-03-09 13:45:32,559 | INFO | login button clicked.
+2023-03-09 13:45:32,559 | INFO | logged in successfully.
+2023-03-09 13:45:32,559 | INFO | Report downloading and inserting data for supermart pca campaign
+2023-03-09 13:45:40,323 | INFO | pop up box removed..
+2023-03-09 13:45:46,386 | INFO | drop down clicked
+2023-03-09 13:45:54,519 | INFO | supermart option selected...
+2023-03-09 13:46:05,607 | INFO | Download btn clicked! Report downloaded
+2023-03-09 13:46:10,611 | INFO | Downloaded file name : etz48gatif.csv
+2023-03-09 13:46:10,612 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-09 13:46:10,612 | INFO | file name changed..
+2023-03-09 13:46:10,612 | INFO | Downloaded file name : downloaded.csv
+2023-03-09 13:46:10,612 | INFO | changed file name : /home/shubh/Desktop/AGL/chrome-headless/pcaPlaReports/downloaded.csv
+2023-03-09 13:46:10,612 | INFO | file name changed..

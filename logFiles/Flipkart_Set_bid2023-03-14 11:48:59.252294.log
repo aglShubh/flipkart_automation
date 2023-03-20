@@ -1,0 +1,23 @@
+2023-03-14 11:48:59,252 | INFO | Script Execution start at : 2023-03-14 11:48:59.252530
+2023-03-14 11:48:59,614 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-03-14 11:48:59,614 | INFO | Module Description :  Flipkart Campaign|AdGroup|Creative|FSN automation script.
+
+2023-03-14 11:48:59,614 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-14 11:48:59,614 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-14 11:48:59,615 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-14 11:48:59,615 | INFO | Platform : Linux
+2023-03-14 11:48:59,615 | INFO | author :  AGL 
+2023-03-14 11:48:59,615 | INFO | copyright : Copyright 2022, AGL
+2023-03-14 11:48:59,615 | INFO | credits : ['Shubham Jangid']
+2023-03-14 11:48:59,615 | INFO | license : AGL PVT LIMITED
+2023-03-14 11:48:59,615 | INFO | version : 1.0.0
+2023-03-14 11:48:59,615 | INFO | maintainer : Shubham Jangid
+2023-03-14 11:48:59,615 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-14 11:48:59,615 | INFO | status : dev
+
+2023-03-14 11:49:00,789 | INFO | Logging in ...
+2023-03-14 11:49:01,935 | INFO | Email inserted.
+2023-03-14 11:49:02,102 | INFO | Password inserted.
+2023-03-14 11:49:12,164 | INFO | login button clicked.
+2023-03-14 11:49:12,164 | INFO | logged in successfully.

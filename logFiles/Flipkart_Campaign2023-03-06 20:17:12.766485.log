@@ -1,0 +1,27 @@
+2023-03-06 20:17:12,767 | INFO | Script Execution start at : 2023-03-06 20:17:12.767052
+2023-03-06 20:17:13,348 | INFO | Module Description :  Flipkart Campaign automation script.
+
+2023-03-06 20:17:13,348 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-06 20:17:13,348 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-06 20:17:13,348 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-03-06 20:17:13,348 | INFO | Platform : Linux
+2023-03-06 20:17:13,348 | INFO | author :  AGL 
+2023-03-06 20:17:13,348 | INFO | copyright : Copyright 2022, AGL
+2023-03-06 20:17:13,348 | INFO | credits : ['Shubham Jangid']
+2023-03-06 20:17:13,348 | INFO | license : AGL PVT LIMITED
+2023-03-06 20:17:13,348 | INFO | version : 1.0.0
+2023-03-06 20:17:13,348 | INFO | maintainer : Shubham Jangid
+2023-03-06 20:17:13,348 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-06 20:17:13,348 | INFO | status : dev
+
+2023-03-06 20:17:16,459 | INFO | Email inserted.
+2023-03-06 20:17:16,699 | INFO | Password inserted.
+2023-03-06 20:17:26,770 | INFO | login button clicked.
+2023-03-06 20:17:26,770 | INFO | logged in successfully.
+2023-03-06 20:17:37,833 | INFO | pop up box removed..
+2023-03-06 20:17:40,908 | INFO | DropDown clicked 
+2023-03-06 20:17:45,993 | INFO |  PCA option is selected
+2023-03-06 20:17:51,088 | INFO | Changes applied option set successfully..
+2023-03-06 20:17:57,702 | INFO | pop up box removed..
+2023-03-06 20:18:05,871 | INFO | bid state changed successfully

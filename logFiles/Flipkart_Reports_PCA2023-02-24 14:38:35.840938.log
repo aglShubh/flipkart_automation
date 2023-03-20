@@ -1,0 +1,27 @@
+2023-02-24 14:38:35,841 | INFO | Script Execution start at : 2023-02-24 14:38:35.841237
+2023-02-24 14:38:36,269 | ERROR | Module not found error : ModuleNotFoundError("No module named 'pymysql'")
+2023-02-24 14:38:36,269 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-24 14:38:36,269 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-24 14:38:36,269 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-24 14:38:36,269 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-24 14:38:36,270 | INFO | Platform : Linux
+2023-02-24 14:38:36,270 | INFO | author :  AGL 
+2023-02-24 14:38:36,270 | INFO | copyright : Copyright 2022, AGL
+2023-02-24 14:38:36,270 | INFO | credits : ['Shubham Jangid']
+2023-02-24 14:38:36,270 | INFO | license : AGL PVT LIMITED
+2023-02-24 14:38:36,270 | INFO | version : 1.0.0
+2023-02-24 14:38:36,270 | INFO | maintainer : Shubham Jangid
+2023-02-24 14:38:36,270 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-24 14:38:36,270 | INFO | status : dev
+
+2023-02-24 14:38:38,943 | INFO | Email inserted.
+2023-02-24 14:38:39,191 | INFO | Password inserted.
+2023-02-24 14:38:54,257 | INFO | login button clicked.
+2023-02-24 14:38:54,257 | INFO | logged in successfully.
+2023-02-24 14:39:02,725 | INFO | ad product dropdown clicked
+2023-02-24 14:39:08,786 | INFO | PCA option selected.
+2023-02-24 14:39:11,848 | INFO | report type drop down cliked
+2023-02-24 14:39:20,909 | INFO | Report type selected
+2023-02-24 14:39:20,909 | ERROR | Error downloading selected report.

@@ -1,0 +1,35 @@
+2023-02-27 08:24:17,029 | INFO | Script Execution start at : 2023-02-27 08:24:17.029506
+2023-02-27 08:24:17,387 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 08:24:17,387 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-27 08:24:17,387 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 08:24:17,387 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 08:24:17,387 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 08:24:17,387 | INFO | Platform : Linux
+2023-02-27 08:24:17,387 | INFO | author :  AGL 
+2023-02-27 08:24:17,387 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 08:24:17,387 | INFO | credits : ['Shubham Jangid']
+2023-02-27 08:24:17,387 | INFO | license : AGL PVT LIMITED
+2023-02-27 08:24:17,387 | INFO | version : 1.0.0
+2023-02-27 08:24:17,387 | INFO | maintainer : Shubham Jangid
+2023-02-27 08:24:17,388 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 08:24:17,388 | INFO | status : dev
+
+2023-02-27 08:24:20,010 | INFO | Email inserted.
+2023-02-27 08:24:20,206 | INFO | Password inserted.
+2023-02-27 08:24:30,276 | INFO | login button clicked.
+2023-02-27 08:24:30,276 | INFO | logged in successfully.
+2023-02-27 08:24:38,214 | INFO | pop up box removed..
+2023-02-27 08:24:44,321 | INFO | ad product dropdown clicked
+2023-02-27 08:24:50,446 | INFO | PCA option selected.
+2023-02-27 08:24:54,506 | INFO | report type drop down cliked
+2023-02-27 08:25:02,648 | INFO | Report type selected
+2023-02-27 08:25:08,814 | INFO | date div box clicked
+2023-02-27 08:25:14,920 | INFO | Range selected..
+2023-02-27 08:25:20,092 | INFO | Download button clicked
+2023-02-27 08:25:25,097 | INFO | Report download completed...
+2023-02-27 08:25:27,098 | INFO | Downloaded file name : rm45hd8t1h.csv
+2023-02-27 08:25:27,099 | INFO | Downloaded file name : downloaded.csv
+2023-02-27 08:25:29,747 | INFO | inserting data...
+2023-02-27 08:25:29,747 | INFO | data inserted in flipkart_supermart_campaign_report_pca table.

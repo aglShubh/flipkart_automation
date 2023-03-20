@@ -1,0 +1,26 @@
+2023-03-11 14:19:28,006 | INFO | Script Execution start at : 2023-03-11 14:19:28.006780
+2023-03-11 14:19:29,013 | INFO | Module Description :  Flipkart PLA reports download module.
+
+2023-03-11 14:19:29,013 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-03-11 14:19:29,013 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-03-11 14:19:29,013 | INFO | Python Version : 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0]
+2023-03-11 14:19:29,013 | INFO | Platform : Linux
+2023-03-11 14:19:29,013 | INFO | author :  AGL 
+2023-03-11 14:19:29,013 | INFO | copyright : Copyright 2022, AGL
+2023-03-11 14:19:29,013 | INFO | credits : ['Shubham Jangid']
+2023-03-11 14:19:29,013 | INFO | license : AGL PVT LIMITED
+2023-03-11 14:19:29,013 | INFO | version : 1.0.0
+2023-03-11 14:19:29,013 | INFO | maintainer : Shubham Jangid
+2023-03-11 14:19:29,013 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-03-11 14:19:29,013 | INFO | status : dev
+
+2023-03-11 14:19:32,868 | INFO | Email inserted.
+2023-03-11 14:19:33,070 | INFO | Password inserted.
+2023-03-11 14:19:43,191 | INFO | login button clicked.
+2023-03-11 14:19:43,191 | INFO | logged in successfully.
+2023-03-11 14:19:43,191 | INFO | Process start for PlacementPerformanceReport
+2023-03-11 14:19:43,191 | INFO | Process start for SearchTeamReport
+2023-03-11 14:19:54,389 | INFO | pop up box removed..
+2023-03-11 14:20:00,453 | INFO | ad product dropdown clicked
+2023-03-11 14:20:06,606 | INFO | PLA option selected.

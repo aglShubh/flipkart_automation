@@ -1,0 +1,49 @@
+2023-02-27 09:07:11,312 | INFO | Script Execution start at : 2023-02-27 09:07:11.312347
+2023-02-27 09:07:11,670 | ERROR | Module not found error : ModuleNotFoundError("No module named 'rich'")
+2023-02-27 09:07:11,671 | INFO | Module Description :  Flipkart PCA/PLA reports download module.
+
+2023-02-27 09:07:11,671 | INFO | PyCon: “Code is more often read than written.” — Guido van Rossum
+2023-02-27 09:07:11,671 | INFO | “Code tells you how; Comments tell you why.” — Jeff Atwood (aka Coding Horror)
+
+2023-02-27 09:07:11,671 | INFO | Python Version : 3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]
+2023-02-27 09:07:11,671 | INFO | Platform : Linux
+2023-02-27 09:07:11,671 | INFO | author :  AGL 
+2023-02-27 09:07:11,671 | INFO | copyright : Copyright 2022, AGL
+2023-02-27 09:07:11,671 | INFO | credits : ['Shubham Jangid']
+2023-02-27 09:07:11,671 | INFO | license : AGL PVT LIMITED
+2023-02-27 09:07:11,671 | INFO | version : 1.0.0
+2023-02-27 09:07:11,671 | INFO | maintainer : Shubham Jangid
+2023-02-27 09:07:11,671 | INFO | contact_email : jangid.shubham@adglobal360.com
+2023-02-27 09:07:11,671 | INFO | status : dev
+
+2023-02-27 09:07:14,416 | INFO | Email inserted.
+2023-02-27 09:07:14,612 | INFO | Password inserted.
+2023-02-27 09:07:24,667 | INFO | login button clicked.
+2023-02-27 09:07:24,668 | INFO | logged in successfully.
+2023-02-27 09:07:32,840 | INFO | pop up box removed..
+2023-02-27 09:07:38,952 | INFO | ad product dropdown clicked
+2023-02-27 09:07:45,062 | INFO | PCA option selected.
+2023-02-27 09:07:49,171 | INFO | report type drop down cliked
+2023-02-27 09:07:57,327 | INFO | Consolidated Report type selected
+2023-02-27 09:08:03,428 | INFO | date div box clicked
+2023-02-27 09:08:09,511 | INFO | Range selected..
+2023-02-27 09:08:14,587 | INFO | Download button clicked
+2023-02-27 09:08:19,591 | INFO | Report download completed...
+2023-02-27 09:08:21,592 | INFO | Downloaded file name : xl0zvccnvga.csv
+2023-02-27 09:08:24,365 | INFO | inserting data...
+2023-02-27 09:08:24,365 | INFO | data inserted in flipkart_supermart_campaign_report_pca table.
+2023-02-27 09:08:29,368 | INFO | file removed..
+2023-02-27 09:08:45,392 | INFO | pop up box removed..
+2023-02-27 09:08:51,483 | INFO | ad product dropdown clicked
+2023-02-27 09:08:57,658 | INFO | PCA option selected.
+2023-02-27 09:09:01,728 | INFO | report type drop down cliked
+2023-02-27 09:09:09,892 | INFO | Consolidated Report type selected
+2023-02-27 09:09:09,892 | INFO | PlacementPerformanceReport Selected...
+2023-02-27 09:09:16,008 | INFO | date div box clicked
+2023-02-27 09:09:22,092 | INFO | Range selected..
+2023-02-27 09:09:27,195 | INFO | Download button clicked
+2023-02-27 09:09:32,200 | INFO | Report download completed...
+2023-02-27 09:09:34,202 | INFO | Downloaded file name : d5symmxbrc8.csv
+2023-02-27 09:09:36,750 | INFO | inserting data...
+2023-02-27 09:09:36,750 | INFO | data inserted in flipkart_supermart_campaign_report_pca table.
+2023-02-27 09:09:41,756 | INFO | file removed..
