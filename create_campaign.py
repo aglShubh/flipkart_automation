@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-"""Flipkart Campaign|AdGroup|Creative|FSN automation script."""
+"""Flipkart Create campaign automation script."""
 
 #######################################################################################################
 # Futures
@@ -19,7 +19,7 @@ import time
 # log file generating for each time script run
 try:
     now = datetime.datetime.now()
-    filename = "Flipkart_Campaign" + str(now) + ".log"
+    filename = "Create_campaign" + str(now) + ".log"
     logging.basicConfig(
         filename=filename,
         filemode="w",
@@ -126,12 +126,12 @@ from selenium.webdriver.common.by import By
 # creating instance for options
 chrome_options = Options()
 chrome_options.binary_location = (
-    "/usr/bin/google-chrome"  # comment this line for headless mode
+    # "/usr/bin/google-chrome"  # comment this line for headless mode
 )
 chrome_options.add_argument("--start-maximized")
 chrome_options.add_argument("--profile-directory=Default")
 chrome_options.add_argument("--disable-notifications")
-# chrome_options.add_argument('--headless=new') # uncomment this line to run script in headleass mode
+chrome_options.add_argument('--headless=new') # uncomment this line to run script in headleass mode
 # chrome_options.headless = True
 
 preferences = {
@@ -148,15 +148,17 @@ browser = webdriver.Chrome(
 # creating engine using sqlalchemy orm
 from sqlalchemy import create_engine
 
-
 def alchemy_connection():
+    """Create connection using sqlalchemy."""
     engine = create_engine(
         "mysql+pymysql://rbuser:Agl325Umn1d@43.204.245.132:2499/automation"
     )
     return engine
 
-# account : str = "4YILERKLSZ92" # 
-account = "C18XVZJB4GD7" # vanish
+
+# accounts and ids
+mars_account: str =  "C18XVZJB4GD7" 
+vanish_account: str  = "C18XVZJB4GD7"
 
 # configuration values
 HOST = "43.204.245.132"
@@ -193,6 +195,7 @@ db_connection = database_connection()
 logger.info(f"Logging in ...")
 login_url = "https://advertising.flipkart.com/login?tenant=BSS"
 def logIn():
+    """Login automation code for selenium."""
     browser.get(login_url)
     try:
         login_email_box = browser.find_element(
@@ -231,14 +234,12 @@ def logIn():
 logIn()
 time.sleep(5)
 
-# camp_url : str = "https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
-
-
 
 actionalble_data_list = []
 def getActionableData():
+    """Get data from rpa.action table to apply checks."""
     cursor = db_connection.cursor()
-    query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id FROM automation.rpa_action where action_status = 0 and action in ("enable","pause") limit 5;"""
+    query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id FROM automation.rpa_action where action_status = 1 and action in ("enable","pause");"""
     cursor.execute(query=query)
     actionable_data = cursor.fetchall()
 
@@ -258,94 +259,8 @@ def getActionableData():
 print(getActionableData())
 
 
-def removePopUpBox() -> None:
-    try:
-        pop_box = browser.find_element(
-            By.XPATH, '//*[@id="popover-content"]/div/div/div[2]/button'
-        )
-        pop_box.click()
-        time.sleep(2)
-        logger.info(f"pop up box removed..")
-    except Exception as _e:
-        logger.error(f"Error removing pop up box")
-        pass
-
-def searchAndGetCampaignStatus(search_url : str = ""):
-    search_url = search_url 
-    browser.get(search_url)
-    time.sleep(3)
-    removePopUpBox()
-    time.sleep(2)
-
-    # get campaign status
-    try:
-        time.sleep(2)
-        state = browser.find_element(By.CSS_SELECTOR, '#list > div > div > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div > div > span.styles__StyledCampaignStatus-lju9ke-4.pfLcH > div > span')
-        state.click()
-        state_val = state.get_attribute("innerText")
-        logger.info(f"state value is : {state_val}")
-        return state_val
-    except Exception as _e:
-        logger.error(f"Error gettting status value of campaign: {repr(_e)}")
 
 
-
-def changePcaPlaCampaignState():
-    """Enable and pause the camapign."""
-    for camp in actionalble_data_list:
-        campaign_id = camp["campaign_id"]
-        ad_group_id = camp["ad_group_id"]
-        action = camp["action"]
-        seg = camp["segment"]
-
-        search_campaign_url = f"https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount={account}&ascending=false&searchString={campaign_id}"
-
-        campaign_exact_status = searchAndGetCampaignStatus(search_url=search_campaign_url)
-        logger.info(f"cmapaign {campaign_id} status is {campaign_exact_status.lower()}")
-        logger.info(f"campaing {campaign_id} db status is {action.lower()}")
-
-        # action param need to change in db as live and paused
-        if campaign_exact_status.lower() == "completed":
-            logger.info(f"campaign status completed passed..")
-            pass
-        elif campaign_exact_status.lower() == "aborted":
-            logger.info(f"campaign status is aborted so passed")
-            pass
-        elif action.lower() == campaign_exact_status.lower():
-            logger.info(f"pass as {action.lower()} and {campaign_exact_status.lower()} matched")
-            pass
-        else:
-            camp_url = f"https://advertising.flipkart.com/ad-account/campaigns/{seg.lower()}/{campaign_id}?baccount=RSAUFLMCSZ&aaccount={account}"
-            browser.get(camp_url)
-            print(f"I am here {camp_url}")
-            time.sleep(3)
-            logger.info(f"Segment {camp['segment']} and campaign_id {campaign_id} selected.")
-            try:
-                removePopUpBox()
-                time.sleep(3)
-                logger.info(f"Pop up box removed...")
-            except Exception as _e:
-                removePopUpBox()
-                logger.error(f"Not removed error {repr(_e)}")
-                pass
-            try:
-                # change state block 
-                time.sleep(5)
-                r_path = browser.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div')
-                r_path.click()
-                logger.info(f"campaign state changed successfully")
-                time.sleep(3)
-                cursor = db_connection.cursor()
-                q = """update  automation.rpa_action set action_status = 0 where campaign_id = %s and ad_group_id = %s"""
-                cursor.execute(q,(campaign_id,ad_group_id))
-                db_connection.commit()
-                logger.info(f"Action status changed...")
-                
-            except Exception as _e:
-                logger.error(f"Error changing state of campaign or no such box to click{repr(_e)}")
-                pass
-            time.sleep(5)
-
-changePcaPlaCampaignState()
-time.sleep(10)
-browser.quit()
+def createCampaign():
+    """Campaign creating automation function."""
+    pass
