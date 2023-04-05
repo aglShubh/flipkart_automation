@@ -156,7 +156,7 @@ def alchemy_connection():
     )
     return engine
 
-account : str = "4YILERKLSZ92"
+account : str = "C18XVZJB4GD7"
 
 # configuration values
 HOST = "43.204.245.132"
@@ -238,7 +238,7 @@ time.sleep(5)
 actionalble_data_list = []
 def getActionableData():
     cursor = db_connection.cursor()
-    query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id FROM automation.rpa_action where action_status = 1;"""
+    query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id FROM automation.rpa_action where action_status = 0 and segment = 'pla' and id =69;"""
     cursor.execute(query=query)
     actionable_data = cursor.fetchall()
 
@@ -293,6 +293,22 @@ def sendFsnId(fsn_id : str = None)->None:
     except Exception as _e:
         logger.info(f"Error in input of fsn id {repr(_e)}")
 
+
+def getFsnStatus()->None:
+    """Get actual state of fsn."""
+    # get fsn status
+    try:
+        state = browser.find_element(By.CSS_SELECTOR, '#app > div:nth-child(1) > div:nth-child(1) > div > div.content > div > div.styles__StyledPlayArea-ihipf8-1.eGKFPt > section > section > div.tablectn > div > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > div > div > div > span > div > span')
+        state.click()
+        state_val = state.get_attribute("innerText")
+        logger.info(f"fsn state value is : {state_val}")
+        print(state_val)
+        return state_val
+    except Exception as _e:
+        logger.error(f"Error gettting status value of fsn: {repr(_e)}")
+
+
+
 def changeState():
     try:
         add = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/section/section/div[2]/div/div[2]/div/div/div/div/div/div[1]')
@@ -311,6 +327,7 @@ def changePlaFSNState():
         if ad['action_type'] == "fsn":
             fsn_id = ad["fsn_id"]
             seg = ad['segment']
+            # ad_url = "https://advertising.flipkart.com/ad-account/campaigns/pla/3N9RRNV9NWH9/PKQKMTNSHYKH?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
             ad_url = f"https://advertising.flipkart.com/ad-account/campaigns/{seg.lower()}/{ad['campaign_id']}/{ad['ad_group_id']}?baccount=RSAUFLMCSZ&aaccount={account}"
             browser.get(ad_url)
             time.sleep(5)
@@ -329,12 +346,27 @@ def changePlaFSNState():
                 clickFsnInputBox()
                 time.sleep(2)
                 sendFsnId(fsn_id=fsn_id)
-                time.sleep(2)
+                time.sleep(3)
+                fsn_exact_status = getFsnStatus()
+                if fsn_exact_status == None:
+                    pass
+                elif fsn_exact_status.lower() == "completed":
+                    logger.info(f"fsn is already completed")
+                    pass
+                elif fsn_exact_status.lower() == "aborted":
+                    logger.info(f"fsn is aborted...")
+                    pass
+                elif fsn_exact_status.lower() == "proccessing" and ad["action"] == "enable":
+                    logger.info(f"fsn already enables..")
+                    pass
+                elif fsn_exact_status.lower() == "paused" and ad["action"] == "pause":
+                    logger.info(f"fsn status is already paused")
+                    pass
                 changeState()
                 time.sleep(2)
             except Exception as _e:
                 logger.error(f"Error at final stage {repr(_e)}")
-    
+
 changePlaFSNState()
 
 
@@ -351,115 +383,3 @@ changePlaFSNState()
 
 
 
-
-
-
-
-# def clickOnAdProductType():
-#     try:
-#         ad_type = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div[1]/div')
-#         ad_type.click()
-#         logger.info(f"DropDown clicked ")
-#         time.sleep(2)
-#     except Exception as _e:
-#         logger.info(f"Error finding element {repr(_e)}")
-
-# clickOnAdProductType()
-
-# def selectProductOption(): # sekect pca option
-#     try:
-#         pca_option = browser.find_element(By.XPATH, '//*[@id="popover-content"]/div/div[1]/div[2]/div/div/div/label')
-#         pca_option.click()
-#         time.sleep(3)
-#         logger.info(f" PCA option is selected")
-#     except Exception as _e:
-#         logger.error(f"Error selecting option.. {repr(_e)}")
-
-# selectProductOption()
-
-# def applyChanges():
-#     try:
-#         apply_change = browser.find_element(By.XPATH,'//*[@id="popover-content"]/div/div[2]/button/div')
-#         apply_change.click()
-#         time.sleep(5)
-#         logger.info(f"Changes applied option set successfully..")
-#     except Exception as _e:
-#         logger.error(f"Error applying changes: {repr(_e)}")
-
-# applyChanges()
-# browser.refresh()
-# time.sleep(3)
-# removePopUpBox()
-# time.sleep(3)
-
-
-# def clickCampaign():
-#     # it needs to be dynamic, action, and camapign or url of campaign comes under this fun
-#     """Campaign specific url."""
-#     camp_link = browser.find_element(By.XPATH,'//*[@id="list"]/div/div/div[2]/div/div[1]/div/div/div/div[2]/div/span/div/a')
-#     camp_link.click()
-#     logger.info(f"Campaign url or campaign clicked.")
-#     time.sleep(5)
-
-# clickCampaign()
-
-# def changeCampaignState():
-#     """Enable and pause the camapign."""
-#     try:
-#         r_path = browser.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div')
-#         r_path.click()
-#         logger.info(f"campaign state changed successfully")
-#         time.sleep(3)
-#     except Exception as _e:
-#         logger.error(f"Error changing state of campaign {repr(_e)}")
-
-# changeCampaignState()
-
-# def changeAdGroupState():
-#     """Enable and pause the adGroup."""
-#     try:
-#         ad_group_path = browser.find_element(By.XPATH,'//*[@id="duration"]/div/span[2]/div')
-#         ad_group_path.click()
-#         logger.info(f"ad group within campaign state changed successfully")
-#         time.sleep(3)
-#     except Exception as _e:
-#         logger.error(f"Error changing state of adgroup {repr(_e)}")
-
-# changeAdGroupState()
-
-
-def changeBid():
-    bid_url = "https://advertising.flipkart.com/ad-account/campaigns/pca/3DQQ674515LR/edit?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
-    browser.get(bid_url)
-    time.sleep(3)
-    removePopUpBox()
-    time.sleep(7)
-    input_bid = browser.find_element(
-        By.XPATH,
-        '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[6]/div[2]/div/div/input',
-    )
-    input_bid.click()
-    input_bid.send_keys(Keys.CONTROL + "a")
-    input_bid.send_keys(Keys.DELETE)
-    time.sleep(5)
-    val: any = input_bid.get_attribute("value")
-    input_bid.send_keys(1002)
-
-    print(val)
-
-
-# changeBid()
-
-# browser.quit()
-
-# create campaign
-
-# campaign enable, pause n abort
-# adgroup lvl enable,pause n abort
-# FSN lvl asin
-# pca -> creative
-# pla -> fsn
-
-#**
-# create campaign
-# pca - edit - budget
