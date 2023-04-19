@@ -155,7 +155,7 @@ def alchemy_connection():
     return engine
 
 
-account : str = "4YILERKLSZ92"
+account: str = "4YILERKLSZ92"
 
 
 # configuration values

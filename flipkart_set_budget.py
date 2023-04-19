@@ -155,7 +155,8 @@ def alchemy_connection():
     )
     return engine
 
-account : str = "4YILERKLSZ92"
+
+account: str = "4YILERKLSZ92"
 
 # configuration values
 HOST = "43.204.245.132"
@@ -186,11 +187,14 @@ def database_connection():
         # logging.info("SUCCESS: Connection to RDS MySQL instance succeeded")
         return connection
 
+
 db_connection = database_connection()
 
 
 logger.info(f"Logging in ...")
 login_url = "https://advertising.flipkart.com/login?tenant=BSS"
+
+
 def logIn():
     browser.get(login_url)
     try:
@@ -227,14 +231,16 @@ def logIn():
     else:
         logger.info(f"logged in successfully.")
 
+
 logIn()
 time.sleep(5)
 
 # camp_url : str = "https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
 
 
-
 actionalble_data_list = []
+
+
 def getActionableData():
     cursor = db_connection.cursor()
     query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id, set_value FROM automation.rpa_action where action_status = 1;"""
@@ -255,6 +261,7 @@ def getActionableData():
 
     return actionalble_data_list
 
+
 print(getActionableData())
 
 
@@ -273,16 +280,23 @@ def removePopUpBox() -> None:
 
 def clickContinue():
     try:
-        con = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+        con = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]',
+        )
         con.click()
         time.sleep(3)
         logger.info(f"continue btn clicked")
     except Exception as _e:
         logger.error(f"Error clicking cont btn {repr(_e)}")
 
-def BudgetBoxPLA(set_val = None):
+
+def BudgetBoxPLA(set_val=None):
     try:
-        budget_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div/div/input')
+        budget_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div/div/input',
+        )
         budget_box.click()
         time.sleep(3)
         budget_box.click()
@@ -297,9 +311,12 @@ def BudgetBoxPLA(set_val = None):
         logger.error(f"Error in set budget.. {repr(_e)}")
 
 
-def budgetBoxPCA(set_val = None):
+def budgetBoxPCA(set_val=None):
     try:
-        budget_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[6]/div[2]/div/div/input')
+        budget_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[6]/div[2]/div/div/input',
+        )
         budget_box.click()
         time.sleep(3)
         budget_box.click()
@@ -312,19 +329,22 @@ def budgetBoxPCA(set_val = None):
         logger.info(f"New budget : {set_val}")
     except Exception as _e:
         logger.error(f"Error in set budget.. {repr(_e)}")
-
 
 
 def finalContinueBtn():
     try:
-        con = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+        con = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]',
+        )
         con.click()
         time.sleep(3)
         logger.info(f"final continue btn clicked")
     except Exception as _e:
         logger.error(f"Error clicking cont btn {repr(_e)}")
 
-def submit(path:str = None):
+
+def submit(path: str = None):
     try:
         con = browser.find_element(By.XPATH, path)
         con.click()
@@ -348,7 +368,7 @@ def setOrUpdateBudget():
             time.sleep(3)
             removePopUpBox()
             time.sleep(3)
-            
+
             if camp["segment"] == "pla":
                 clickContinue()
                 time.sleep(2)
@@ -356,15 +376,19 @@ def setOrUpdateBudget():
                 time.sleep(2)
                 finalContinueBtn()
                 time.sleep(3)
-                submit(path = '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+                submit(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
+                )
                 time.sleep(5)
             elif camp["segment"] == "pca":
                 budgetBoxPCA(set_val=set_value)
                 time.sleep(2)
                 finalContinueBtn()
                 time.sleep(3)
-                submit(path = '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[1]')
-                time.sleep(5)      
+                submit(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[1]'
+                )
+                time.sleep(5)
 
 
 setOrUpdateBudget()

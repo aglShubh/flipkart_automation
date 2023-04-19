@@ -155,8 +155,9 @@ def alchemy_connection():
     )
     return engine
 
-# account : str = "4YILERKLSZ92" # 
-account = "C18XVZJB4GD7" # vanish
+
+# account : str = "4YILERKLSZ92" #
+account = "C18XVZJB4GD7"  # vanish
 
 # configuration values
 HOST = "43.204.245.132"
@@ -187,11 +188,14 @@ def database_connection():
         # logging.info("SUCCESS: Connection to RDS MySQL instance succeeded")
         return connection
 
+
 db_connection = database_connection()
 
 
 logger.info(f"Logging in ...")
 login_url = "https://advertising.flipkart.com/login?tenant=BSS"
+
+
 def logIn():
     browser.get(login_url)
     try:
@@ -228,14 +232,16 @@ def logIn():
     else:
         logger.info(f"logged in successfully.")
 
+
 logIn()
 time.sleep(5)
 
 # camp_url : str = "https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
 
 
-
 actionalble_data_list = []
+
+
 def getActionableData():
     cursor = db_connection.cursor()
     query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id FROM automation.rpa_action where action_status = 0 and action in ("enable","pause") limit 5;"""
@@ -255,6 +261,7 @@ def getActionableData():
 
     return actionalble_data_list
 
+
 print(getActionableData())
 
 
@@ -270,8 +277,9 @@ def removePopUpBox() -> None:
         logger.error(f"Error removing pop up box")
         pass
 
-def searchAndGetCampaignStatus(search_url : str = ""):
-    search_url = search_url 
+
+def searchAndGetCampaignStatus(search_url: str = ""):
+    search_url = search_url
     browser.get(search_url)
     time.sleep(3)
     removePopUpBox()
@@ -280,14 +288,16 @@ def searchAndGetCampaignStatus(search_url : str = ""):
     # get campaign status
     try:
         time.sleep(2)
-        state = browser.find_element(By.CSS_SELECTOR, '#list > div > div > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div > div > span.styles__StyledCampaignStatus-lju9ke-4.pfLcH > div > span')
+        state = browser.find_element(
+            By.CSS_SELECTOR,
+            "#list > div > div > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div > div > span.styles__StyledCampaignStatus-lju9ke-4.pfLcH > div > span",
+        )
         state.click()
         state_val = state.get_attribute("innerText")
         logger.info(f"state value is : {state_val}")
         return state_val
     except Exception as _e:
         logger.error(f"Error gettting status value of campaign: {repr(_e)}")
-
 
 
 def changePcaPlaCampaignState():
@@ -300,7 +310,9 @@ def changePcaPlaCampaignState():
 
         search_campaign_url = f"https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount={account}&ascending=false&searchString={campaign_id}"
 
-        campaign_exact_status = searchAndGetCampaignStatus(search_url=search_campaign_url)
+        campaign_exact_status = searchAndGetCampaignStatus(
+            search_url=search_campaign_url
+        )
         logger.info(f"cmapaign {campaign_id} status is {campaign_exact_status.lower()}")
         logger.info(f"campaing {campaign_id} db status is {action.lower()}")
 
@@ -312,14 +324,18 @@ def changePcaPlaCampaignState():
             logger.info(f"campaign status is aborted so passed")
             pass
         elif action.lower() == campaign_exact_status.lower():
-            logger.info(f"pass as {action.lower()} and {campaign_exact_status.lower()} matched")
+            logger.info(
+                f"pass as {action.lower()} and {campaign_exact_status.lower()} matched"
+            )
             pass
         else:
             camp_url = f"https://advertising.flipkart.com/ad-account/campaigns/{seg.lower()}/{campaign_id}?baccount=RSAUFLMCSZ&aaccount={account}"
             browser.get(camp_url)
             print(f"I am here {camp_url}")
             time.sleep(3)
-            logger.info(f"Segment {camp['segment']} and campaign_id {campaign_id} selected.")
+            logger.info(
+                f"Segment {camp['segment']} and campaign_id {campaign_id} selected."
+            )
             try:
                 removePopUpBox()
                 time.sleep(3)
@@ -329,22 +345,28 @@ def changePcaPlaCampaignState():
                 logger.error(f"Not removed error {repr(_e)}")
                 pass
             try:
-                # change state block 
+                # change state block
                 time.sleep(5)
-                r_path = browser.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div')
+                r_path = browser.find_element(
+                    By.XPATH,
+                    '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/header/section/div[2]/div/span[3]/div',
+                )
                 r_path.click()
                 logger.info(f"campaign state changed successfully")
                 time.sleep(3)
                 cursor = db_connection.cursor()
                 q = """update  automation.rpa_action set action_status = 0 where campaign_id = %s and ad_group_id = %s"""
-                cursor.execute(q,(campaign_id,ad_group_id))
+                cursor.execute(q, (campaign_id, ad_group_id))
                 db_connection.commit()
                 logger.info(f"Action status changed...")
-                
+
             except Exception as _e:
-                logger.error(f"Error changing state of campaign or no such box to click{repr(_e)}")
+                logger.error(
+                    f"Error changing state of campaign or no such box to click{repr(_e)}"
+                )
                 pass
             time.sleep(5)
+
 
 changePcaPlaCampaignState()
 time.sleep(10)

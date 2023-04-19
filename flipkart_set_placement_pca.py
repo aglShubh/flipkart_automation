@@ -198,6 +198,8 @@ db_connection = database_connection()
 
 logger.info(f"Logging in ...")
 login_url = "https://advertising.flipkart.com/login?tenant=BSS"
+
+
 def logIn():
     browser.get(login_url)
     try:
@@ -278,20 +280,29 @@ def getActionableData():
 
     return actionalble_data_list
 
+
 print(getActionableData())
 
 
 def editAdGroup():
     try:
-        edit_path = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[6]')
-        edit_svg = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[6]/div/span/div')
-        hover = ActionChains(browser).move_to_element(edit_path).move_to_element(edit_svg)
+        edit_path = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[6]',
+        )
+        edit_svg = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[6]/div/span/div',
+        )
+        hover = (
+            ActionChains(browser).move_to_element(edit_path).move_to_element(edit_svg)
+        )
         hover.click().perform()
 
         time.sleep(3)
         logger.info(f"clicked on edit btn of adGroup")
     except Exception as _e:
-        logger.error(f"Error clicking ad group edit btn.") 
+        logger.error(f"Error clicking ad group edit btn.")
 
 
 def nextBtn(path: str = None):
@@ -330,9 +341,9 @@ def saveAdGroupBtn():
         logger.error(f"Error clicking cont btn {repr(_e)}")
 
 
-def setTopOfSearchPage(top_percent: str = "",path: str = ""):
+def setTopOfSearchPage(top_percent: str = "", path: str = ""):
     try:
-        top_box = browser.find_element(By.XPATH,path )
+        top_box = browser.find_element(By.XPATH, path)
         top_box.click()
         top_box.clear()
         time.sleep(2)
@@ -342,9 +353,9 @@ def setTopOfSearchPage(top_percent: str = "",path: str = ""):
         logger.error(f"Error top of serach percentage set : {repr(_e)}")
 
 
-def setRestOfSearchPage(rest_percent: str = "",path: str= ""):
+def setRestOfSearchPage(rest_percent: str = "", path: str = ""):
     try:
-        rest_box = browser.find_element(By.XPATH,path)
+        rest_box = browser.find_element(By.XPATH, path)
         rest_box.click()
         rest_box.clear()
         time.sleep(2)
@@ -356,7 +367,7 @@ def setRestOfSearchPage(rest_percent: str = "",path: str= ""):
 
 def setTopOfBrowserPage(browser_percenat: str = "", path: str = ""):
     try:
-        browser_box = browser.find_element(By.XPATH,path)
+        browser_box = browser.find_element(By.XPATH, path)
         browser_box.click()
         browser_box.clear()
         time.sleep(2)
@@ -368,7 +379,7 @@ def setTopOfBrowserPage(browser_percenat: str = "", path: str = ""):
 
 def setRestOfBrowserPage(rest_browser_percent: str = "", path: str = ""):
     try:
-        rest_browser_box = browser.find_element(By.XPATH,path)
+        rest_browser_box = browser.find_element(By.XPATH, path)
         rest_browser_box.click()
         rest_browser_box.clear()
         time.sleep(2)
@@ -433,27 +444,43 @@ def setPlacementPca():
                     time.sleep(2)
                     editAdGroup()
                     time.sleep(2)
-                    nextBtn(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/button[2]')
+                    nextBtn(
+                        path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/button[2]'
+                    )
                     time.sleep(3)
-                    nextBtn(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[3]/div/div[2]/div/div[2]/button[2]')
+                    nextBtn(
+                        path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[3]/div/div[2]/div/div[2]/button[2]'
+                    )
                     time.sleep(3)
                     try:
-                        setTopOfSearchPage(top_percent=top_of_search_page, path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div[1]/div[2]/div/div[2]/div/div/input')
+                        setTopOfSearchPage(
+                            top_percent=top_of_search_page,
+                            path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div[1]/div[2]/div/div[2]/div/div/input',
+                        )
                         time.sleep(2)
                     except:
                         pass
                     try:
-                        setRestOfSearchPage(rest_percent=rest_of_search_page, path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div[1]/div[3]/div/div[2]/div/div/input')
+                        setRestOfSearchPage(
+                            rest_percent=rest_of_search_page,
+                            path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div[1]/div[3]/div/div[2]/div/div/input',
+                        )
                         time.sleep(2)
                     except:
                         pass
                     try:
-                        setTopOfBrowserPage(browser_percenat=top_of_browser_page, path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div/div[4]/div/div[2]/div/div/input')
+                        setTopOfBrowserPage(
+                            browser_percenat=top_of_browser_page,
+                            path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div/div[4]/div/div[2]/div/div/input',
+                        )
                         time.sleep(2)
                     except:
                         pass
                     try:
-                        setRestOfBrowserPage(rest_browser_percent=rest_of_browser_page, path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div/div[5]/div/div[2]/div/div/input')
+                        setRestOfBrowserPage(
+                            rest_browser_percent=rest_of_browser_page,
+                            path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[5]/div/div[2]/div/div[5]/div/div[2]/div/div/input',
+                        )
                         time.sleep(2)
                     except:
                         pass
@@ -461,10 +488,12 @@ def setPlacementPca():
                     time.sleep(2)
                     finalContinueBtn()
                     time.sleep(2)
-                    submit(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+                    submit(
+                        path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
+                    )
                     time.sleep(5)
+
 
 setPlacementPca()
 time.sleep(5)
 browser.quit()
-

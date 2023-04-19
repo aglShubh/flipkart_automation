@@ -306,11 +306,13 @@ def getDataForCampaignCreation():
 
     return campaign_data_list
 
+
 print(getDataForCampaignCreation())
 
 camp_page_url = f"https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
 browser.get(camp_page_url)
 time.sleep(3)
+
 
 def removePopUpBox() -> None:
     try:
@@ -327,16 +329,21 @@ def removePopUpBox() -> None:
 
 def selectCreateCampaign():
     try:
-        cc = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div/button')
+        cc = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div/button',
+        )
         cc.click()
         time.sleep(3)
         logger.info(f"Create campaign btn clicked...")
     except Exception as _e:
         logger.error(f"Error clicking create campaign btn... {repr(_e)}")
 
+
 selectCreateCampaign()
 
-def selectCampaignType(campaign_path :str = ""):
+
+def selectCampaignType(campaign_path: str = ""):
     try:
         # //*[@id="app"]/div[2]/div[7]/div/div[2]/div/div[2]/div/a[1] # pla only
         # //*[@id="app"]/div[2]/div[7]/div/div[2]/div/div[2]/div/a[2]
@@ -347,11 +354,18 @@ def selectCampaignType(campaign_path :str = ""):
     except Exception as _e:
         logger.error(f"Error selecting option {repr(_e)}")
 
-selectCampaignType(campaign_path='//*[@id="app"]/div[2]/div[7]/div/div[2]/div/div[2]/div/a[1]')
 
-def selectAndEnterCampaignName(camp_name:str = ""):
+selectCampaignType(
+    campaign_path='//*[@id="app"]/div[2]/div[7]/div/div[2]/div/div[2]/div/a[1]'
+)
+
+
+def selectAndEnterCampaignName(camp_name: str = ""):
     try:
-        camp_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/input')
+        camp_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[1]/div/div[2]/div/input',
+        )
         camp_box.click()
         logger.info(f"Input box clicked and focused")
         time.sleep(2)
@@ -360,9 +374,11 @@ def selectAndEnterCampaignName(camp_name:str = ""):
     except Exception as _e:
         logger.error(f"Error something went wrong ... {repr(_e)}")
 
+
 selectAndEnterCampaignName(camp_name="test camp")
 
-def selectAdPlatform(platform_path:str = ""):
+
+def selectAdPlatform(platform_path: str = ""):
     try:
         # flipkart : //*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div/div[2]/div/div[1]/div
         # sm : //*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div/div[2]/div/div[2]/div
@@ -373,16 +389,24 @@ def selectAdPlatform(platform_path:str = ""):
     except Exception as _e:
         logger.error(f"Error selecting ad platform..{repr(_e)}")
 
-selectAdPlatform(platform_path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div/div[2]/div/div[1]/div')
+
+selectAdPlatform(
+    platform_path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div/div[2]/div/div[1]/div'
+)
+
 
 def continueBtn():
     try:
-        c_btn = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[3]')
+        c_btn = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[3]',
+        )
         c_btn.click()
         time.sleep(3)
         logger.info(f"conitnue btn clicked...")
     except Exception as _e:
         logger.error(f"Error clicking cnt btn... {repr(_e)}")
+
 
 # continueBtn()
 
@@ -390,11 +414,14 @@ def continueBtn():
 def uploadFsnProduct():
     try:
         time.sleep(3)
-        upload_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[3]/div[1]/div[2]/div[2]/div[1]')
+        upload_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[3]/div[1]/div[2]/div[2]/div[1]',
+        )
         time.sleep(3)
         logger.info(f"upload product csv box clicked")
-        
-        # upload file 
+
+        # upload file
         elm = browser.find_element(By.XPATH, "//input[@type='file']")
         # need to change the path in main function
         elm.send_keys(os.getcwd() + "/fsnProductCSV/pla_fsn.csv")
@@ -403,13 +430,18 @@ def uploadFsnProduct():
     except Exception as _e:
         logger.error(f"Error uploading csv product fsn file {repr(_e)}")
 
+
 uploadFsnProduct()
 continueBtn()
 time.sleep(5)
 
+
 def setDate():
     try:
-        cal_icon_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div[1]/div/div/div/div/div/div/input')
+        cal_icon_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div[1]/div/div/div/div/div/div/input',
+        )
         cal_icon_box.click()
         time.sleep(2)
         logger.info(f"calender box clicked")
@@ -422,19 +454,24 @@ def setDate():
     except Exception as _e:
         logger.error(f"Error setting new date : {repr(_e)}")
 
-setDate()                               
+
+setDate()
 time.sleep(30)
+
 
 def setStartEndTime():
     try:
-        set_time_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div[1]/div/div/div/div/div/div/input')
+        set_time_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div/div[1]/div/div/div/div/div/div/input',
+        )
         # set_time_box.click()
         time.sleep(3)
 
         logger.info(f"set start time..")
-        yr = '2023'
-        mn = '4'
-        dt = '3'
+        yr = "2023"
+        mn = "4"
+        dt = "3"
         # set_time_box.clear()
         # print("here")
         # set_time_box.send_keys(Keys.CONTROL + "a")
@@ -444,7 +481,9 @@ def setStartEndTime():
         try:
             # set_time_box.click()
             # cal_box = browser.find_element(By.XPATH, '//*[@id="popover-content"]/div')
-            browser.execute_script("arguments[0].value = '05/04/2023 08:10'", set_time_box)
+            browser.execute_script(
+                "arguments[0].value = '05/04/2023 08:10'", set_time_box
+            )
             # set_time_box.send_keys('04/04/2023')
             # time.sleep(4)
             # set_time_box.send_keys(Keys.ENTER)
@@ -458,19 +497,24 @@ def setStartEndTime():
     except Exception as _e:
         logger.error(f"Error setting up date.. {repr(_e)}")
 
+
 # setStartEndTime()
 # time.sleep(300)
 
 
 def setBudget():
     try:
-        budget_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div/div/input')
+        budget_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div/div/input',
+        )
         budget_box.click()
         time.sleep(2)
         budget_box.send_keys("1000")
         logger.info(f"budget value set ")
     except Exception as _e:
         logger.error(f"Error setting budget {repr(_e)}")
+
 
 # time.sleep(3)
 # setBudget()

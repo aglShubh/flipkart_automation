@@ -272,7 +272,8 @@ def selectOptionFromAdProductDropDown(xpath: str = "") -> None:
 def clickReportForOption():
     try:
         click_report = browser.find_element(
-            By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[3]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div',
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[3]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div',
         )
         click_report.click()
         logger.info(f"click report for box clicked")
@@ -375,7 +376,6 @@ def renameDownloadFile():
                 logger.info(f"file name changed..")
 
 
-
 def changeCSVColumn(report_type: str = "", campaign_type: str = "") -> None:
 
     df = pd.read_csv(
@@ -405,10 +405,10 @@ def changeCSVColumn(report_type: str = "", campaign_type: str = "") -> None:
                 "Direct Revenue": "direct_revenue",
                 "Indirect Revenue": "indirect_revenue",
                 "ROI (Direct)": "roi_direct",
-                "ROI (Indirect)": "roi_indirect"
+                "ROI (Indirect)": "roi_indirect",
             }
         )
-    elif campaign_type == "pla" and report_type =="search_report":
+    elif campaign_type == "pla" and report_type == "search_report":
         df2 = df1.rename(
             columns={
                 "Campaign ID": "campaign_id",
@@ -430,7 +430,7 @@ def changeCSVColumn(report_type: str = "", campaign_type: str = "") -> None:
                 "ROI (Indirect)": "roi_indirect",
             }
         )
-    elif campaign_type == "pla" and report_type =="consolidated_fsn_report":
+    elif campaign_type == "pla" and report_type == "consolidated_fsn_report":
         df2 = df1.rename(
             columns={
                 "Campaign ID": "campaign_id",
@@ -451,7 +451,7 @@ def changeCSVColumn(report_type: str = "", campaign_type: str = "") -> None:
                 "ROI (Indirect)": "roi_indirect",
             }
         )
-    elif campaign_type == "pla" and report_type =="keyword_report":
+    elif campaign_type == "pla" and report_type == "keyword_report":
         df2 = df1.rename(
             columns={
                 "Campaign ID": "campaign_id",
@@ -484,9 +484,6 @@ def insertDataIntoDB(df2: pd.DataFrame = "", table_name: str = ""):
         index=False,
     )
     logger.info("inserting data...")
-
-
-
 
 
 def removeLastDownloadedFile(path: str = "") -> None:
@@ -538,6 +535,7 @@ def removeLastDownloadedFile(path: str = "") -> None:
 # flipkart_supermart_placement_report_pla -- Placement Performance Report
 logger.info(f"Process start for PlacementPerformanceReport")
 
+
 def flipkartSupermartPlacementReportPlaPlacementPerformanceReport():
     time.sleep(3)
     browser.get(reports_url)
@@ -566,7 +564,7 @@ def flipkartSupermartPlacementReportPlaPlacementPerformanceReport():
     renameDownloadFile()
     time.sleep(10)
     insertDataIntoDB(
-        df2 = changeCSVColumn(report_type="placement_report", campaign_type="pla"),
+        df2=changeCSVColumn(report_type="placement_report", campaign_type="pla"),
         table_name="flipkart_supermart_placement_report_pla",
     )
     time.sleep(15)
@@ -583,6 +581,8 @@ def flipkartSupermartPlacementReportPlaPlacementPerformanceReport():
 
 # flipkart_supermart_search_report_pla  -- Search Team Report
 logger.info(f"Process start for SearchTeamReport")
+
+
 def flipkartSupermartSearchReportPla():
     time.sleep(3)
     browser.get(reports_url)
@@ -611,8 +611,8 @@ def flipkartSupermartSearchReportPla():
     renameDownloadFile()
     time.sleep(10)
     insertDataIntoDB(
-        df2=changeCSVColumn(report_type="search_report",campaign_type="pla"),
-        table_name="flipkart_supermart_search_report_pla"
+        df2=changeCSVColumn(report_type="search_report", campaign_type="pla"),
+        table_name="flipkart_supermart_search_report_pla",
     )
     time.sleep(30)
     removeLastDownloadedFile(
@@ -628,6 +628,7 @@ def flipkartSupermartSearchReportPla():
 
 # flipkart_supermart_consolidated_fsn_report_pla  --  Consolidated FSN Report  -- Not Data Found
 logger.info(f"Process start for Consolidated FSN  Report")
+
 
 def flipkartSupermartConsolidatedFsnReportPla():
     time.sleep(3)
@@ -657,7 +658,7 @@ def flipkartSupermartConsolidatedFsnReportPla():
     renameDownloadFile()
     time.sleep(10)
     insertDataIntoDB(
-        df2=changeCSVColumn(report_type="consolidated_fsn_report",campaign_type="pla"),
+        df2=changeCSVColumn(report_type="consolidated_fsn_report", campaign_type="pla"),
         table_name="flipkart_supermart_consolidated_fsn_report_pla",
     )
     time.sleep(30)
@@ -666,6 +667,7 @@ def flipkartSupermartConsolidatedFsnReportPla():
     )
     print("done")
 
+
 # flipkartSupermartConsolidatedFsnReportPla()
 # logger.info(f"Process done for Consolidated FSN  Report for PLA")
 # time.sleep(5)
@@ -673,6 +675,7 @@ def flipkartSupermartConsolidatedFsnReportPla():
 
 # flipkart_supermart_keyword_report_pla -- Keyword Report
 logger.info(f"Process start for Keyword Report")
+
 
 def flipkartSupermartKeywordReportPla():
     time.sleep(3)
@@ -703,7 +706,7 @@ def flipkartSupermartKeywordReportPla():
     time.sleep(10)
     insertDataIntoDB(
         changeCSVColumn(report_type="keyword_report", campaign_type="pla"),
-        table_name="flipkart_supermart_keyword_report_pla"
+        table_name="flipkart_supermart_keyword_report_pla",
     )
     time.sleep(30)
     removeLastDownloadedFile(

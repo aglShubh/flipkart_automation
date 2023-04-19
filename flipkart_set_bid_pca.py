@@ -59,7 +59,6 @@ try:
     from rich import print
     import pandas as pd
     import datetime
-    import time
     from iteration_utilities import unique_everseen
 
 
@@ -155,8 +154,9 @@ def alchemy_connection():
     )
     return engine
 
-mars_account : str = "4YILERKLSZ92"
-vanish_account : str = "C18XVZJB4GD7"
+
+mars_account: str = "4YILERKLSZ92"
+vanish_account: str = "C18XVZJB4GD7"
 
 # configuration values
 HOST = "43.204.245.132"
@@ -187,11 +187,14 @@ def database_connection():
         # logging.info("SUCCESS: Connection to RDS MySQL instance succeeded")
         return connection
 
+
 db_connection = database_connection()
 
 
 logger.info(f"Logging in ...")
 login_url = "https://advertising.flipkart.com/login?tenant=BSS"
+
+
 def logIn():
     browser.get(login_url)
     try:
@@ -228,14 +231,16 @@ def logIn():
     else:
         logger.info(f"logged in successfully.")
 
+
 logIn()
 time.sleep(5)
 
 # camp_url : str = "https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
 
 
-
 actionalble_data_list = []
+
+
 def getActionableData():
     cursor = db_connection.cursor()
     query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id, set_value FROM automation.rpa_action where action_status = 1;"""
@@ -256,6 +261,7 @@ def getActionableData():
 
     return actionalble_data_list
 
+
 print(getActionableData())
 
 
@@ -274,7 +280,10 @@ def removePopUpBox() -> None:
 
 def clickContinue():
     try:
-        con = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+        con = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]',
+        )
         con.click()
         time.sleep(3)
         logger.info(f"continue btn clicked")
@@ -282,8 +291,7 @@ def clickContinue():
         logger.error(f"Error clicking cont btn {repr(_e)}")
 
 
-
-def bidBoxPCA(set_val = None, path : str = None):
+def bidBoxPCA(set_val=None, path: str = None):
     try:
         bid_box = browser.find_element(By.XPATH, path)
         bid_box.click()
@@ -299,7 +307,8 @@ def bidBoxPCA(set_val = None, path : str = None):
     except Exception as _e:
         logger.error(f"Error in set bid for pla campaign.. {repr(_e)}")
 
-def nextBtn(path:str = None):
+
+def nextBtn(path: str = None):
     try:
         btn = browser.find_element(By.XPATH, path)
         btn.click()
@@ -308,9 +317,13 @@ def nextBtn(path:str = None):
     except Exception as _e:
         logger.info(f"Error clicking on next btn {repr(_e)}")
 
+
 def saveAdGroup():
     try:
-        btn = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[7]/button[2]')
+        btn = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[7]/button[2]',
+        )
         btn.click()
         time.sleep(2)
         logger.info(f"save ad group  btn click...")
@@ -320,14 +333,18 @@ def saveAdGroup():
 
 def finalContinueBtn():
     try:
-        con = browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+        con = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]',
+        )
         con.click()
         time.sleep(3)
         logger.info(f"final continue btn clicked")
     except Exception as _e:
         logger.error(f"Error clicking cont btn {repr(_e)}")
 
-def submit(path:str = None):
+
+def submit(path: str = None):
     try:
         con = browser.find_element(By.XPATH, path)
         con.click()
@@ -355,17 +372,26 @@ def setOrUpdateBid():
             time.sleep(3)
             clickContinue()
             time.sleep(3)
-            nextBtn(path = '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/button[2]')
+            nextBtn(
+                path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[2]/div/div[2]/div/div[3]/button[2]'
+            )
             time.sleep(3)
-            nextBtn(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[3]/div/div[2]/div/div[2]/button[2]')
+            nextBtn(
+                path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[3]/div/div[2]/div/div[2]/button[2]'
+            )
             time.sleep(3)
-            bidBoxPCA(set_val=set_value,path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[4]/div/div[1]/div[2]/div/input')
+            bidBoxPCA(
+                set_val=set_value,
+                path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[4]/div/div[1]/div[2]/div/input',
+            )
             time.sleep(2)
             saveAdGroup()
             time.sleep(3)
             finalContinueBtn()
             time.sleep(3)
-            submit(path = '//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+            submit(
+                path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
+            )
             time.sleep(5)
 
 
