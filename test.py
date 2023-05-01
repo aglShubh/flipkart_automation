@@ -43,23 +43,24 @@ def createFsnPlaCsv(exact_keyword: str = "", broad_keyword: str = ""):
     # to remove the rows
     df = pd.read_csv("addKeywordPla/pla_keyword.csv")
     print(df)
-    df.drop(df.filter(regex="Unname"), axis=1, inplace=True)
-    # df.loc[:, ~df.columns.str.match('Unnamed')]
-    print(df)
-
-    print("a", df.shape)
-    print("b", df.shape[0])
     index = list(range(1, df.shape[0]))
     print("index", index)
     df.drop(index, axis=0, inplace=True)
-    # df.to_csv("addKeywordPla/pla_keyword.csv", index=False,)
+    df.rename(columns={"Unnamed: 1": ""}, inplace=True)
+    df.to_csv(
+        "addKeywordPla/pla_keyword.csv",
+        index=False,
+    )
     print(df)
     time.sleep(3)
 
-    # df1 = pd.DataFrame.from_dict({'Broad': broad_pla_keyword, 'Exact': exact_pla_keyword}, orient='index').T
-    # print(df1)
-    # df1.to_csv("addKeywordPla/pla_keyword.csv", mode="a", index=False, header=False)
-    # time.sleep(3)
+    # append the data...
+    df1 = pd.DataFrame.from_dict(
+        {"Broad": broad_pla_keyword, "Exact": exact_pla_keyword}, orient="index"
+    ).T
+    print(df1)
+    df1.to_csv("addKeywordPla/pla_keyword.csv", mode="a", index=False, header=False)
+    time.sleep(3)
 
 
-createFsnPlaCsv(exact_keyword="a,b,e,e", broad_keyword="z")
+createFsnPlaCsv(exact_keyword="a,b,e,f", broad_keyword="z")

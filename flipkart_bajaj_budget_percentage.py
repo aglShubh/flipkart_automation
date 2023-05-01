@@ -232,7 +232,6 @@ def logIn():
 logIn()
 time.sleep(5)
 
-# camp_url : str = "https://advertising.flipkart.com/ad-account/campaigns?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7"
 
 curr_date = datetime.datetime.now()
 
@@ -259,6 +258,7 @@ def getFlipkartCampaignData():
 
 
 print(getFlipkartCampaignData())
+
 
 
 def insertCrawlId():

@@ -39,8 +39,6 @@ import json
 
 # Libs
 import json
-import sys
-import pandas as pd
 import csv
 import requests
 import pymysql
@@ -49,18 +47,11 @@ import pymysql
 try:
     # import awswrangler as wr  # to read from athena
     # import boto3
-    import requests
-    import sys
     import pandas as pd
     import logging
-    import time
     import re
     import pymysql.cursors
-    from rich import print
-    import pandas as pd
     import datetime
-    import time
-    from iteration_utilities import unique_everseen
 
 
 except Exception as e:
