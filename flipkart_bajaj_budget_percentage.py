@@ -260,7 +260,6 @@ def getFlipkartCampaignData():
 print(getFlipkartCampaignData())
 
 
-
 def insertCrawlId():
     """Get max crawl id and insert next crawl id when script execute."""
     crawl_cursor = db_connection.cursor()

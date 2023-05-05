@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-"""Flipkart remove keyword  for PLA."""
+"""Flipkart add or remove negative keyword  for PLA."""
 
 #######################################################################################################
 # Futures
@@ -19,7 +19,7 @@ import time
 # log file generating for each time script run
 try:
     now = datetime.datetime.now()
-    filename = "flipkart_remove_keyword_pla" + str(now) + ".log"
+    filename = "flipkart_remove_add_negative_keyword_pla_" + str(now) + ".log"
     logging.basicConfig(
         filename=filename,
         filemode="w",
@@ -50,17 +50,8 @@ try:
     # import awswrangler as wr  # to read from athena
     # import boto3
     from bs4 import BeautifulSoup
-    import requests
-    import sys
-    import pandas as pd
-    import logging
-    import time
     import re
     import pymysql.cursors
-    from rich import print
-    import pandas as pd
-    import datetime
-    import time
     from iteration_utilities import unique_everseen
 
 
@@ -203,7 +194,7 @@ actionalble_data_list = []
 
 def getActionableData():
     cursor = db_connection.cursor()
-    query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id, exact_keyword, exclude_keyword, broad_keyword, set_value, platform_id, account_id FROM automation.rpa_action where action_status = 0 and id= 83;"""
+    query = """SELECT action_status, segment, action_type, action, fsn_id, campaign_id, ad_group_id, exact_keyword, exclude_keyword, broad_keyword, set_value, platform_id, account_id FROM automation.rpa_action where action_status = 1 and id= 107;"""
     cursor.execute(query=query)
     actionable_data = cursor.fetchall()
 
@@ -352,78 +343,21 @@ def selectAndClickAdKeyword():
         logger.error(f"Error clicking ad keyword link .. {repr(_e)}")
 
 
-def getPhraseMatchKeyword(broad_exclude_keyword: str = "", url: str = "") -> list:
-    """Broad keyword listing exclude keywords and format a new list"""
+def clickExcludeKeyword():
     try:
-        try:
-            if broad_exclude_keyword != None:
-                broad_exclude_keyword = broad_exclude_keyword.split(",")
-                logger.info(
-                    f"broad pla keywords are which gonna be exclude or remove : {broad_exclude_keyword} "
-                )
-                print(f"if cond : {broad_exclude_keyword}")
-            else:
-                broad_exclude_keyword = [""]
-            logger.info(f"broad_pla_keyword : {broad_exclude_keyword}")
-        except Exception as _e:
-            logger.error(
-                f"Error creating list using broad exclude keywords: {repr(_e)}"
-            )
-
-        ## creating soup and extracting phrase keywords
-        try:
-            get_data_from_link = requests.get(url=url).text
-            time.sleep(5)
-
-            loc_html = browser.find_element(
-                By.XPATH,
-                '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[3]/div[3]',
-            ).get_attribute("innerHTML")
-            _soup = BeautifulSoup(loc_html, "html.parser")
-
-            # get broad keywords
-            broad_keywords = [
-                item.text
-                for item in _soup.find_all(
-                    "div", {"class": "styles__Chip-ul2i0x-1 dkARgs chip"}
-                )
-            ]
-            print(f"len of data : {len(broad_keywords)}")
-            print(broad_keywords)
-
-            logger.info(f"len of data : {len(broad_keywords)}")
-            logger.info(f"phrase/broad keyword are : {broad_keywords}")
-        except Exception as _e:
-            logger.error(f" Error getting phrase keywords: {repr(_e)}")
-
-        broad_pla_keyword = []
-        ## fliter out broad exclude keywords fromm broad keywords list
-        if broad_exclude_keyword != None or len(broad_exclude_keyword) != 0:
-            lst = [
-                bro_key
-                for bro_key in broad_keywords
-                if bro_key not in broad_exclude_keyword
-            ]
-            logger.info(f"new lst is : {lst}")
-
-            broad_pla_keyword = lst
-            logger.info(f"broad pla keyword are : {broad_pla_keyword}")
-            logger.info(
-                f"len of broad pla keyword after removing : {len(broad_pla_keyword)}"
-            )
-        else:
-            broad_pla_keyword = broad_keywords
-            logger.info(f"Else ->broad pla keywords are : {broad_pla_keyword}")
-
+        exe_key_box = browser.find_element(
+            By.XPATH,
+            '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[1]/div/button[2]',
+        )
+        exe_key_box.click()
+        logger.info(f"exclude box btn clicked.")
+        time.sleep(2)
     except Exception as _e:
-        logger.info(f"Error getting broad keyword list ... {repr(_e)}")
-        print(f"Error getting broad keyword list ... {repr(_e)}")
-
-    return broad_pla_keyword
+        logger.error(f"Error clicking exclude box : {repr(_e)}")
 
 
 def getExactMatchKeyword(exact_exclude_keyword: str = "", url: str = "") -> list:
-    """Broad keyword listing exclude keywords and format a new list"""
+    """Exact keywords listing for exclude keywords and format a new list"""
     try:
         try:
             if exact_exclude_keyword != None:
@@ -440,14 +374,14 @@ def getExactMatchKeyword(exact_exclude_keyword: str = "", url: str = "") -> list
                 f"Error creating list using exact exclude keywords: {repr(_e)}"
             )
 
-        ## creating soup and extracting phrase keywords
+        ## creating soup and extracting exact exclude keywords
         try:
             get_data_from_link = requests.get(url=url).text
-            time.sleep(5)
+            time.sleep(10)
 
             loc_html = browser.find_element(
                 By.XPATH,
-                '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[4]/div[3]',
+                '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div/div[2]/div[3]',
             ).get_attribute("innerHTML")
             _soup = BeautifulSoup(loc_html, "html.parser")
 
@@ -498,76 +432,64 @@ def getExactMatchKeyword(exact_exclude_keyword: str = "", url: str = "") -> list
     return exact_pla_keyword
 
 
-def createKeywordCsvPla(exact_keyword: str = "", broad_keyword: str = ""):
+def createExcludePlaCsv(exact_keyword: str = None):
     if exact_keyword != None:
         exact_pla_keyword = exact_keyword
     else:
         exact_pla_keyword = [""]
     logger.info(f"exact_pla_keyword : {exact_pla_keyword}")
 
-    if broad_keyword != None:
-        broad_pla_keyword = broad_keyword
-    else:
-        broad_pla_keyword = [""]
-    logger.info(f"broad_pla_keyword : {broad_pla_keyword}")
-
     # to remove the rows
-    df = pd.read_csv("rmKeywordPla/pla_keyword.csv")
+    df = pd.read_csv("rmKeywordPla/exclude_pla.csv")
     index = list(range(1, df.shape[0]))
     # drop the data except initial two rows
     df.drop(index, axis=0, inplace=True)
 
     # remove the unnamed 1 coulmn
     df.rename(columns={"Unnamed: 1": ""}, inplace=True)
-
+    print(df)
     # create csv
     df.to_csv(
-        "rmKeywordPla/pla_keyword.csv",
+        "rmKeywordPla/exclude_pla.csv",
         index=False,
     )
+
     time.sleep(3)
 
     # append the data...
-    df1 = pd.DataFrame.from_dict(
-        {"Broad": broad_pla_keyword, "Exact": exact_pla_keyword}, orient="index"
-    ).T
-    df1.to_csv("rmKeywordPla/pla_keyword.csv", mode="a", index=False, header=False)
+    df1 = pd.DataFrame.from_dict({"Exact": exact_pla_keyword}, orient="index").T
+    df1.to_csv("rmKeywordPla/exclude_pla.csv", mode="a", index=False, header=False)
+    print(df1)
     time.sleep(2)
-
-
-def removeAllKeywords(path: str = ""):
-    try:
-        rm_all = browser.find_element(By.XPATH, path)
-        rm_all.click()
-        time.sleep(2)
-        logger.info(f"remove all clicked  keywords")
-    except Exception as _e:
-        logger.error(f"Error click remove keywords : {repr(_e)}")
 
 
 # write on csv then upload
 def uploadKeyword():
     try:
-        scrollToYPosition(
-            path='//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[4]/div[1]/div'
-        )
-        time.sleep(2)
-        upload_box = browser.find_element(
-            By.XPATH,
-            '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[4]/div[1]/div',
-        )
-        time.sleep(2)
-        logger.info(f"upload product csv box clicked")
+        try:
+            upload_box = browser.find_element(
+                By.XPATH,
+                '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div/div[3]/div[1]/div',
+            )
+            time.sleep(2)
+            logger.info(f"upload product csv box clicked")
+        except NoSuchElementException:
+            upload_box = browser.find_element(
+                By.CLASS_NAME,
+                'styles__FileInput-sc-3g7han-4 bTGGCv',
+            )
+            time.sleep(2)
+            logger.info(f"upload product csv box clicked")         
 
         # upload file
         elm = browser.find_element(By.XPATH, "//input[@type='file']")
         # need to change the path in main function
         try:
-            elm.send_keys(os.getcwd() + "/rmKeywordPla/pla_keyword.csv")
+            elm.send_keys(os.getcwd() + "/rmKeywordPla/exclude_pla.csv")
             time.sleep(2)
         except:
             os.mkdir("rmKeywordPla")
-            elm.send_keys(os.getcwd() + "/rmKeywordPla/pla_keyword.csv")
+            elm.send_keys(os.getcwd() + "/rmKeywordPla/exclude_pla.csv")
             time.sleep(2)
 
         logger.info(f"file uploaded")
@@ -587,6 +509,18 @@ def saveKeyword():
         logger.error(f"Error clicking save btn : {repr(_e)}")
 
 
+def skipAndSave():
+    try:
+        skip_save_btn = browser.find_element(
+            By.XPATH, '//*[@id="app"]/div[2]/div[9]/div/div[2]/div/div[3]/button[1]/div'
+        )
+        skip_save_btn.click()
+        logger.info(f"keywords saved")
+        time.sleep(2)
+    except Exception as _e:
+        logger.error(f"Error saving keywords : {repr(_e)}")
+
+
 def submit(path: str = None):
     try:
         con = browser.find_element(By.XPATH, path)
@@ -597,96 +531,86 @@ def submit(path: str = None):
         logger.error(f"Error clicking submit btn {repr(_e)}")
 
 
-# def skipAndSave():
-#     try:
-#         skip_save_btn = browser.find_element(
-#             By.XPATH, '//*[@id="app"]/div[2]/div[9]/div/div[2]/div/div[3]/button[1]'
-#         )
-#         skip_save_btn.click()
-#         logger.info(f"keywords saved")
-#         time.sleep(2)
-#     except Exception as _e:
-#         logger.error(f"Error saving keywords : {repr(_e)}")
-
-
-def removeKeywordPla():
+def removeNegativeKeywordPla():
     for act in actionalble_data_list:
         account_id = act["account_id"]
         platform_id = act["platform_id"]
         campaign_id = act["campaign_id"]
-        ad_group_id = act["ad_group_id"]
+        # ad_group_id = act["ad_group_id"]
         segment = act["segment"]
         action = act["action"]
-        exact_keyword = act["exact_keyword"]
-        broad_keyword = act["broad_keyword"]
+        exact_keyword = act["exclude_keyword"]
 
-        if action == "remove_keyword" and segment.lower() == "pla":
-            pla_keyword_edit_url = f"https://advertising.flipkart.com/ad-account/campaigns/{segment.lower()}/{campaign_id}/edit?baccount={account_id}&aaccount={platform_id}"
-            browser.get(pla_keyword_edit_url)
+        if (
+            action == "remove_negative_keyword"
+            or action == "remove-negative-keyword"
+            and segment.lower() == "pla"
+        ):
+            remove_neg_key_url = f"https://advertising.flipkart.com/ad-account/campaigns/{segment.lower()}/{campaign_id}/edit?baccount={account_id}&aaccount={platform_id}&campaign={campaign_id}&hierarchy=10&tab=0&step=1"
+            browser.get(remove_neg_key_url)
             time.sleep(3)
             try:
                 removePopUpBox()
                 time.sleep(1)
 
-                removeNewPopUpBox()
-                time.sleep(1)
-
-                continueBtn(
-                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[3]/div/div[2]/button[2]'
+                scrollToYPosition(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[6]/div[3]/table/tbody/tr[2]/td[4]/div'
                 )
                 time.sleep(2)
 
-                ## scroll to the edit keywords box
-                scrollToYPosition(path='//*[@id="0"]/td[4]/section')
                 removePopUpBox()
                 time.sleep(1)
 
-                ## click on edit pencil
                 selectAndClickAdKeyword()
-                time.sleep(1)
+                time.sleep(3)
 
-                ## exclude broad keywords
-                res_phrase = getPhraseMatchKeyword(
-                    broad_exclude_keyword=broad_keyword, url=pla_keyword_edit_url
-                )
+                clickExcludeKeyword()
+                time.sleep(5)
 
-                ## exclude exact keywords
-                res_exact = getExactMatchKeyword(
-                    exact_exclude_keyword=exact_keyword, url=pla_keyword_edit_url
-                )
-
-                ## create csv each time for both exact and broad keywords
-                createKeywordCsvPla(exact_keyword=res_exact, broad_keyword=res_phrase)
+                ## get exact keyword which is exclude keyword in this function
+                ex_keys = getExactMatchKeyword(exact_exclude_keyword=exact_keyword, url=remove_neg_key_url)
                 time.sleep(2)
 
-                ## remove all keywords
-                removeAllKeywords(
-                    path='//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[3]/div[2]/div'
-                )
-                time.sleep(1)
-                logger.info(f"broad keywords removed...")
-                removeAllKeywords(
-                    path='//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[4]/div[2]/div'
-                )
-                time.sleep(1)
-                logger.info(f"exact keywords removed...")
+                # for add pass here
+                createExcludePlaCsv(exact_keyword=ex_keys)
+                time.sleep(10)
+                
+                ##clear keywords box
+                try:
+                    exe_keys_box = browser.find_element(By.XPATH, '//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div/div[2]/div[3]')
+                    # exe_keys_box.send_keys(Keys.CONTROL + "a")
+                    # exe_keys_box.send_keys(Keys.DELETE)
+                    exe_keys_box.click()
+                    exe_keys_box.clear()
 
-                ##upload keywords csv data
+                    
+                    print("here1")
+                    
+                    time.sleep(2)
+                    logger.info(f"exclude keyword box cleared.")
+                except Exception as _e:
+                    # exe_keys_box = browser.find_element(By.CLASS_NAME,'styles__StyledTextArea-ul2i0x-0 jvEWsr')
+                    # exe_keys_box.clear()
+                    # print("here")
+                    # pass
+                    logger.error(f"Error: clearing exclude keyword box : {repr(_e)}")
+
                 uploadKeyword()
-                time.sleep(2)
+                time.sleep(5)
 
-                ##save keywords
                 saveKeyword()
+                time.sleep(3)
+
+                skipAndSave()
                 time.sleep(2)
 
-                ## continue to next page
                 continueBtn(
-                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[3]/div/div[2]/button[2]'
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
                 )
                 time.sleep(2)
 
                 submit(
-                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div[3]/div/div[2]/button[2]'
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
                 )
                 time.sleep(2)
 
@@ -694,9 +618,9 @@ def removeKeywordPla():
                 logger.error(f"something went wrong at final stage : {repr(_e)}")
 
             else:
-                logger.info(f"Keywords successfully modified...")
+                logger.info(f"negative Keywords remove successfully ...")
 
 
-removeKeywordPla()
+removeNegativeKeywordPla()
 time.sleep(5)
 browser.quit()

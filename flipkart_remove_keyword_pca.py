@@ -282,7 +282,6 @@ def removePopUpBox() -> None:
         pass
 
 
-
 def clickAdKeyword() -> bool:
     flag = False
     print(flag)
@@ -352,7 +351,6 @@ def submit(path: str = None):
         logger.error(f"Error clicking submit btn {repr(_e)}")
 
 
-
 def scrollToYPosition(path: str = ""):
     """Function scroll the bar to the given path in y direction"""
     try:
@@ -368,10 +366,6 @@ def scrollToYPosition(path: str = ""):
 
     removePopUpBox()
     time.sleep(2)
-
-
-
-
 
 
 def getPhraseMatchKeyword(broad_exclude_keyword: str = "", url: str = "") -> list:
@@ -520,8 +514,6 @@ def getExactMatchKeyword(exact_exclude_keyword: str = "", url: str = "") -> list
     return exact_pla_keyword
 
 
-
-
 def createKeywordCsvPla(exact_keyword: str = "", broad_keyword: str = ""):
     if exact_keyword != None:
         exact_pla_keyword = exact_keyword
@@ -559,8 +551,6 @@ def createKeywordCsvPla(exact_keyword: str = "", broad_keyword: str = ""):
     time.sleep(2)
 
 
-
-
 def removeAllKeywords(path: str = ""):
     try:
         rm_all = browser.find_element(By.XPATH, path)
@@ -571,12 +561,12 @@ def removeAllKeywords(path: str = ""):
         logger.error(f"Error click remove keywords : {repr(_e)}")
 
 
-
-
 # write on csv then upload
 def uploadKeyword():
     try:
-        scrollToYPosition(path='//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[4]/div[1]/div')
+        scrollToYPosition(
+            path='//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[4]/div[1]/div'
+        )
 
         time.sleep(3)
         upload_box = browser.find_element(
@@ -603,7 +593,6 @@ def uploadKeyword():
         logger.error(f"Error uploading csv product fsn file {repr(_e)}")
 
 
-
 def saveKeyword():
     try:
         save_btn = browser.find_element(
@@ -614,7 +603,6 @@ def saveKeyword():
         time.sleep(2)
     except Exception as _e:
         logger.error(f"Error saving keywords : {repr(_e)}")
-
 
 
 # def skipAndSave():
@@ -650,7 +638,11 @@ def removeKeywordPca():
         exact_keyword = act["exact_keyword"]
         broad_keyword = act["broad_keyword"]
 
-        if action == "remove_keyword" or action == "add_keyword" and segment.lower() == "pca":
+        if (
+            action == "remove_keyword"
+            or action == "add_keyword"
+            and segment.lower() == "pca"
+        ):
             pca_keyword_edit_url = f"https://advertising.flipkart.com/ad-account/campaigns/pca/FLL70HKAYDH2/edit?baccount=RSAUFLMCSZ&aaccount=C18XVZJB4GD7&campaign=FLL70HKAYDH2&hierarchy=10&tab=0&ascending=false&dropDownVal=LIVE%2CPAUSED%2CCOMPLETED&substep=3&adgroupid=892A7N3Z41P9"
             # pca_keyword_edit_url = f"https://advertising.flipkart.com/ad-account/campaigns/{segment.lower()}/{campaign_id}/edit?baccount={account_id}&aaccount={platform_id}&campaign={campaign_id}&hierarchy=10&tab=0&adgroupid={ad_group_id}&substep=3"
             browser.get(pca_keyword_edit_url)
@@ -663,7 +655,9 @@ def removeKeywordPca():
                 )
                 time.sleep(3)
 
-                scrollToYPosition(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[6]/div[3]/section')
+                scrollToYPosition(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[6]/div[3]/section'
+                )
                 time.sleep(2)
                 removePopUpBox()
 
@@ -673,13 +667,19 @@ def removeKeywordPca():
                 removePopUpBox()
                 time.sleep(2)
 
-                broad_keywrod = getPhraseMatchKeyword(broad_exclude_keyword=broad_keyword, url=pca_keyword_edit_url)
+                broad_keywrod = getPhraseMatchKeyword(
+                    broad_exclude_keyword=broad_keyword, url=pca_keyword_edit_url
+                )
 
-                exact_keyword = getExactMatchKeyword(exact_exclude_keyword=exact_keyword, url=pca_keyword_edit_url)
-                
-                createKeywordCsvPla(exact_keyword=exact_keyword, broad_keyword=broad_keywrod)
+                exact_keyword = getExactMatchKeyword(
+                    exact_exclude_keyword=exact_keyword, url=pca_keyword_edit_url
+                )
+
+                createKeywordCsvPla(
+                    exact_keyword=exact_keyword, broad_keyword=broad_keywrod
+                )
                 time.sleep(5)
-            
+
                 removeAllKeywords(
                     path='//*[@id="app"]/div[2]/div[4]/aside/section/div[1]/div[2]/div/div/div[2]/div[3]/div[2]/div'
                 )
@@ -697,18 +697,25 @@ def removeKeywordPca():
                 saveKeyword()
                 time.sleep(1)
 
-                saveAdGroup(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[7]/button[2]')
+                saveAdGroup(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div[3]/div[4]/div/div[2]/div/div[7]/button[2]'
+                )
                 time.sleep(2)
 
-                continueBtn(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+                continueBtn(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
+                )
                 time.sleep(2)
 
-                submit(path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]')
+                submit(
+                    path='//*[@id="app"]/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/div/button[2]'
+                )
                 time.sleep(1)
             except Exception as _e:
                 logger.error(f"something went wrong at final stage : {repr(_e)}")
             else:
                 logger.info(f"Keywords successfully added...")
+
 
 removeKeywordPca()
 time.sleep(5)
